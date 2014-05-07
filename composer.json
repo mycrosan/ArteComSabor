@@ -1,0 +1,12 @@
+{
+    "name": "mycrosan/package_name",
+    "description": "description_text",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Sandy da Silva Santos",
+            "email": "sandysantos@mycrosan.com.br"
+        }
+    ]
+}
