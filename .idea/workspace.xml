@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/index.php" line="200" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="64b5424d-192b-49d1-bc44-1a0c0218752d" name="Default" comment="" />
     <ignored path="CRUD_OOP.iws" />
@@ -30,98 +33,27 @@
       <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.5769944" vertical-offset="811" max-vertical-offset="3536">
+            <state line="64" column="19" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.49186257" vertical-offset="816" max-vertical-offset="4216">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retornaCliente.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/retornaCliente.php">
+      <file leaf-file-name="itensPedido.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/itensPedido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="34" selection-start="493" selection-end="493" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="493">
+            <state line="80" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="-32.346153" vertical-offset="519" max-vertical-offset="1479">
               <folding>
-                <marker date="1399060874885" expanded="true" signature="191:205" placeholder="SELECT * FRO..clientes..." />
-                <marker date="1399060874885" expanded="true" signature="191:213" placeholder="SELECT * FRO..clientes..." />
+                <element signature="e#6#88#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="retornaProduto.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/retornaProduto.php">
+      <file leaf-file-name="carrinhoPedido.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/carrinhoPedido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="12" selection-start="406" selection-end="406" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teste2.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teste2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="35" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="731">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fonte.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fonte.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="25" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuarios.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Usuarios.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="833">
-              <folding>
-                <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-                <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Crud.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Crud.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="76" selection-start="626" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="714">
-              <folding>
-                <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-                <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-                <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Montanha.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/Montanha.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1003">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="747" column="2" selection-start="11092" selection-end="11092" vertical-scroll-proportion="0.0" vertical-offset="11696" max-vertical-offset="98447">
+            <state line="5" column="4" selection-start="90" selection-end="90" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="2839">
               <folding />
             </state>
           </provider>
@@ -158,16 +90,19 @@
         <option value="$PROJECT_DIR$/TESTE.php" />
         <option value="$PROJECT_DIR$/classes/retornaCliente.php" />
         <option value="$PROJECT_DIR$/classes/retornaProduto.php" />
+        <option value="$PROJECT_DIR$/carrinhoPedido.php" />
+        <option value="$PROJECT_DIR$/classes/carrinhoPedido.php" />
+        <option value="$PROJECT_DIR$/classes/itensPedido.php" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHPMY" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1272" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="754" />
+    <option name="width" value="1376" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -195,7 +130,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,7 +144,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD_OOP" />
+              <option name="myItemId" value="ArteComSabor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -220,7 +154,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD_OOP" />
+              <option name="myItemId" value="ArteComSabor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -230,6 +164,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,12 +174,14 @@
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xamp\htdocs\CRUD_OOP\classes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xamp\htdocs\ArteComSabor\classes" />
       <recent name="D:\xamp\htdocs\CRUD_OOP" />
       <recent name="D:\xamp\htdocs\CRUD_OOP\img" />
       <recent name="D:\xamp\htdocs\CRUD_OOP\classes" />
@@ -312,23 +249,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="754" extended-state="1" />
+    <frame x="1272" y="-8" width="1376" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32824427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14781906" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2012384" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13884674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -350,34 +288,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Usuarios.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="5" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="816">
-          <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Crud.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="61" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="714">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -405,9 +326,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/efeito.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1802">
-          <folding />
-        </state>
+        <state line="2" column="10" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1802" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/DB.php">
@@ -426,8 +345,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="44" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="816">
           <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -436,9 +355,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="14" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="714">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -473,8 +392,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="11" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="816">
           <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -483,9 +402,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="714">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -511,9 +430,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="22" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="731">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -522,8 +441,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="833">
           <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -549,9 +468,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="3" selection-start="9" selection-end="9" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="697">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -560,8 +479,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="850">
           <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -587,9 +506,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="45" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="697">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -598,8 +517,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="850">
           <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -613,9 +532,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="30" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="731">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -624,8 +543,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="29" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="850">
           <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -658,9 +577,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/efeito.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802">
-          <folding />
-        </state>
+        <state line="2" column="10" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1802" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/config.php">
@@ -681,8 +598,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="833">
           <folding>
-            <marker date="1398664599343" expanded="true" signature="539:599" placeholder="INSERT INTO ..." />
-            <marker date="1398664599343" expanded="true" signature="833:900" placeholder="UPDATE $this..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1398664599343" expanded="true" signature="-1:-1" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -691,9 +608,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="76" selection-start="626" selection-end="639" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="714">
           <folding>
-            <marker date="1398573781242" expanded="true" signature="325:366" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="579:639" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="798:836" placeholder="DELETE FROM ..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
+            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -724,24 +641,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/retornaCliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="34" selection-start="493" selection-end="493" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="493">
+        <state line="19" column="34" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="493">
           <folding>
-            <marker date="1399060874885" expanded="true" signature="191:205" placeholder="SELECT * FRO..clientes..." />
-            <marker date="1399060874885" expanded="true" signature="191:213" placeholder="SELECT * FRO..clientes..." />
+            <marker date="1399060874885" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..clientes..." />
+            <marker date="1399060874885" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..clientes..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/retornaProduto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="12" selection-start="406" selection-end="406" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="459">
+        <state line="17" column="12" selection-start="406" selection-end="406" vertical-scroll-proportion="0.4792703" vertical-offset="0" max-vertical-offset="603">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/carrinhoPedido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="90" selection-end="90" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="2839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/itensPedido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="1283" selection-end="1283" vertical-scroll-proportion="-32.346153" vertical-offset="519" max-vertical-offset="1479">
+          <folding>
+            <element signature="e#6#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2696" selection-end="2696" vertical-scroll-proportion="0.5769944" vertical-offset="811" max-vertical-offset="3536">
+        <state line="64" column="19" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.49186257" vertical-offset="816" max-vertical-offset="4216">
           <folding />
         </state>
       </provider>

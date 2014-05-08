@@ -46,7 +46,7 @@ function __autoload($nclasse)
                 minLength: 1,
                 select: function(evento,conteudo){
                     //console.log(conteudo);
-                    $('#txtNome').val(conteudo.item.nome);
+                    $('#txtCliente').val(conteudo.item.nome);
                     $('#txtEndereco').val(conteudo.item.endereco);
                     $('#txtBairro').val(conteudo.item.bairro);
                 }
@@ -57,13 +57,12 @@ function __autoload($nclasse)
     <script type="text/javascript">
         $(document).ready(function(){
             // Chamo o Auto complete do JQuery ui setando o id do input, array com os dados e o mínimo de caracteres para disparar o AutoComplete
-            $('#txtProduto').autocomplete({
+            $('#txtDescricaoProduto').autocomplete({
                 source: 'classes/retornaProduto.php',
-                minLength: 1,
+                minLength: 2,
                 select: function(evento,conteudo){
-                    var prc = val(conteudo.item.preco);
-                    alert()
-
+                    var conteudo = $('#txtPreco').val(conteudo.item.preco);
+                   
 
                 }
             });
@@ -73,27 +72,27 @@ function __autoload($nclasse)
 
     <script type="text/javascript">
         /*
-        $(document).ready(function(){
-            $('#resultadoconsulta').hide();
-            $('input').blur(function(){ //Quando clicado no elemento input
-                alert('ola');
+         $(document).ready(function(){
+         $('#resultadoconsulta').hide();
+         $('input').blur(function(){ //Quando clicado no elemento input
+         alert('ola');
 
-                $.ajax({
-                    url: 'arquivo.html',
-                    success: function(data) {
-                       // $('#conteudo').html(data);
-                        // alert(data);
-                    },
-                    beforeSend: function(){
-                        $('.loader').css({display:"block"});
-                    },
-                    complete: function(){
-                        $('.loader').css({display:"none"});
-                    }
-                });
-            });
-        });
-        */
+         $.ajax({
+         url: 'arquivo.html',
+         success: function(data) {
+         // $('#conteudo').html(data);
+         // alert(data);
+         },
+         beforeSend: function(){
+         $('.loader').css({display:"block"});
+         },
+         complete: function(){
+         $('.loader').css({display:"none"});
+         }
+         });
+         });
+         });
+         */
     </script>
 
 </head>
@@ -176,21 +175,62 @@ function __autoload($nclasse)
                     <input type="submit" name="atualizar" class="btn btn-primary" value="Atualizar">
                 </form>
             <?php } else { ?>
-
+                <form>
                 <h3>Dados do Cliente</h3>
+                <input type="hidden" id="txtID" name="txtID">
                 <input type="text" id="txtTelefone" name="txtTelefone" placeholder="Telefone"/>
-                <input type="text" id="txtNome" name="txtNome" placeholder="Cliente"/>
+                <input type="text" id="txtCliente" name="txtCliente" placeholder="Cliente"/>
                 <input type="text" id="txtEndereco" name="txtEndereco" placeholder="Endereço"/>
-                <input type="text" id="txtBairro" name="txttBairro" placeholder="Bairro"/>
+                <input type="text" id="txtBairro" name="txtBairro" placeholder="Bairro"/>
+                <input type="text" id="txtFuncionario" name="txtFuncionario" value="Meire" placeholder="Funcionario"/>
                 <h2>Produtos:</h2>
-                <input type="text" id="txtProduto" name="txtProduto" placeholder="Produto"/>
-                <input type="text" id="txtQuantidade" name="txtQuantidade" placeholder="Quantidade"/>
-                <input type="text" id="txtPreco" name="txtPreco" placeholder="Preço"/>
+
+                    <input type="text" id="txtDescricaoProduto" name="txtDescricaoProduto" placeholder="Descrição do Produto"/>
+                    <input type="text" id="txtQuantidade" name="txtQuantidade" placeholder="Quantidade"/>
+                    <input type="text" id="txtPreco" name="txtPreco" placeholder="Preço"/>
+                    <input type="submit" id="submit" name="inserir" value="inserir">
+                </form>
+
 
 
 
 
             <?php }; ?>
+<?php
+
+            $lista = new carrinhoPedido();
+//Dados do Cliente para o Pedido
+            //$lista->setID($_REQUEST['txtIDcliente']);
+            $lista->setTelefone($_REQUEST['txtTelefone']);
+            $lista->setCliente($_REQUEST['txtCliente']);
+            $lista->setFuncionario($_REQUEST['txtFuncionario']);
+            $lista->setEndereco($_REQUEST['txtEndereco']);
+            $lista->setBairro($_REQUEST['txtBairro']);
+            echo $lista->getTelefone();
+            echo $lista->getCliente();
+            echo $lista->getFuncionario();
+            echo $lista->getEndereco();
+            echo $lista->getBairro();
+
+//Dados dos itens parao pedido
+            $listadeitens = new itensPedido();
+            //$listadeitens->setIDProduto($_REQUEST['txtIDProduto']);
+            $listadeitens->setDescricao($_REQUEST['txtDescricaoProduto']);
+            $listadeitens->setQuantidade($_REQUEST['txtQuantidade']);
+            $listadeitens->setPreco($_REQUEST['txtPreco']);
+
+            echo $listadeitens->getIDProduto();
+            echo $listadeitens->getDescricao();
+            echo $listadeitens->getQuantidade();
+            echo $listadeitens->getPreco();
+
+
+
+
+
+?>
+
+            <div id="divPreco"></div>
 
         </div>
     </div>
