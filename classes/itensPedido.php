@@ -1,10 +1,12 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Mycrosan
  * Date: 08/05/14
  * Time: 16:48
  */
+
 
 class itensPedido {
     //     Atributo dos items do pedido do cliente
@@ -13,6 +15,45 @@ class itensPedido {
     private $descricao;
     private $quantidade;
     private $preco;
+    private $idPedido;
+    private $geraID;
+
+    /**
+     * @param mixed $geraID
+     */
+    public function setGeraID($geraID)
+    {
+        if($geraID==null){
+            $geraID=1;
+        }else{
+            $geraID +=1;
+        }
+        $this->geraID = $geraID;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGeraID()
+    {
+        return $this->geraID;
+    }
+
+    /**
+     * @param mixed $idPedido
+     */
+    public function setIdPedido($idPedido)
+    {
+        $this->idPedido = $idPedido;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdPedido()
+    {
+        return $this->idPedido;
+    }
 
     /**
      * @param mixed $IDProduto

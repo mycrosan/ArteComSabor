@@ -1,6 +1,6 @@
 
 <?php
-class carrinhoPedido{
+class carrinhoPedido extends itensPedido{
 //Atributos do pedido do cliente
     private $IDcliente;
     private $telefone;

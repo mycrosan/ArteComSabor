@@ -11,9 +11,12 @@ $req = "SELECT * FROM clientes WHERE TELEFONE LIKE '%".$_REQUEST['term']."%'";
 
 $query = mysql_query($req);
 
+
+
 while($row = mysql_fetch_array($query))
 {
   $results[] = array(
+      'id' => $row['ID_CLIENTE'],
       'label' => $row['TELEFONE'],
       'nome' => $row['NOME'],
       'endereco' => $row['ENDERECO'],

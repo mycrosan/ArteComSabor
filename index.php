@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <?php
 //ARQUIVO 5
@@ -5,7 +6,6 @@ function __autoload($nclasse)
 {
     require_once 'classes/' . $nclasse . '.php';
 }
-
 ?>
 <!DOCTYPE HTML>
 <html land="pt-BR">
@@ -16,28 +16,15 @@ function __autoload($nclasse)
     <meta name="description" content="PHP OO"/>
     <meta name="robots" content="index, follow"/>
     <meta name="author" content="Andrew Esteves"/>
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <!--  <script/> src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="css/Montanha.css"/>
-
     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-
-
-    <!-- Optional theme -->
-
-
-    <!-- Latest compiled and minified JavaScript -->
-
     <link rel="stylesheet"/>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/efeito.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.4.js"></script>
-
     <script type="text/javascript">
         $(document).ready(function(){
             // Chamo o Auto complete do JQuery ui setando o id do input, array com os dados e o mínimo de caracteres para disparar o AutoComplete
@@ -45,7 +32,8 @@ function __autoload($nclasse)
                 source: 'classes/retornaCliente.php',
                 minLength: 1,
                 select: function(evento,conteudo){
-                    //console.log(conteudo);
+                    console.log(conteudo);
+                    $('#txtIDCliente').val(conteudo.item.id);
                     $('#txtCliente').val(conteudo.item.nome);
                     $('#txtEndereco').val(conteudo.item.endereco);
                     $('#txtBairro').val(conteudo.item.bairro);
@@ -61,8 +49,9 @@ function __autoload($nclasse)
                 source: 'classes/retornaProduto.php',
                 minLength: 2,
                 select: function(evento,conteudo){
-                    var conteudo = $('#txtPreco').val(conteudo.item.preco);
-                   
+                    $('#txtIDProduto').val(conteudo.item.id);
+                    $('#txtPreco').val(conteudo.item.preco);
+
 
                 }
             });
@@ -127,6 +116,7 @@ function __autoload($nclasse)
                         <div class="container">
                             <ul class="nav">
                                 <li class="active"><a href="index.php">Página inicial</a></li>
+                                <li class="active"><a href="classes/destroiSessao.php">Destroi Sessãol</a></li>
                             </ul>
                         </div>
                     </div>
@@ -175,20 +165,19 @@ function __autoload($nclasse)
                     <input type="submit" name="atualizar" class="btn btn-primary" value="Atualizar">
                 </form>
             <?php } else { ?>
-                <form>
-                <h3>Dados do Cliente</h3>
-                <input type="hidden" id="txtID" name="txtID">
-                <input type="text" id="txtTelefone" name="txtTelefone" placeholder="Telefone"/>
-                <input type="text" id="txtCliente" name="txtCliente" placeholder="Cliente"/>
-                <input type="text" id="txtEndereco" name="txtEndereco" placeholder="Endereço"/>
-                <input type="text" id="txtBairro" name="txtBairro" placeholder="Bairro"/>
-                <input type="text" id="txtFuncionario" name="txtFuncionario" value="Meire" placeholder="Funcionario"/>
-                <h2>Produtos:</h2>
-
+                <form id="formPedido" method="post">
+                    <h3>Dados do Cliente</h3>
+                    <input type="hidden" id="txtIDCliente" name="txtIDCliente" />
+                    <input type="text" id="txtTelefone" name="txtTelefone" placeholder="Telefone"/>
+                    <input type="text" id="txtCliente" name="txtCliente"  placeholder="Cliente"/>
+                    <input type="text" id="txtEndereco" name="txtEndereco" placeholder="Endereço"/>
+                    <input type="text" id="txtBairro" name="txtBairro" placeholder="Bairro"/>
+                    <input type="text" id="txtFuncionario" name="txtFuncionario" placeholder="Funcionario"/>
+                    <h2>Produtos:</h2>
+                    <input type="hidden" id="txtIDProduto" name="txtIDProduto" />
                     <input type="text" id="txtDescricaoProduto" name="txtDescricaoProduto" placeholder="Descrição do Produto"/>
-                    <input type="text" id="txtQuantidade" name="txtQuantidade" placeholder="Quantidade"/>
+                    <input type="text" id="txtQuantidade" value="1" name="txtQuantidade" placeholder="Quantidade"/>
                     <input type="text" id="txtPreco" name="txtPreco" placeholder="Preço"/>
-                    <input type="submit" id="submit" name="inserir" value="inserir">
                 </form>
 
 
@@ -196,40 +185,61 @@ function __autoload($nclasse)
 
 
             <?php }; ?>
-<?php
+            <?php
 
             $lista = new carrinhoPedido();
-//Dados do Cliente para o Pedido
-            //$lista->setID($_REQUEST['txtIDcliente']);
+            //Dados do Cliente para o Pedido
+            if(empty($_SESSION['dadosCliente'][0])){
+            $lista->setIDcliente($_REQUEST['txtIDCliente']);
             $lista->setTelefone($_REQUEST['txtTelefone']);
             $lista->setCliente($_REQUEST['txtCliente']);
             $lista->setFuncionario($_REQUEST['txtFuncionario']);
             $lista->setEndereco($_REQUEST['txtEndereco']);
             $lista->setBairro($_REQUEST['txtBairro']);
-            echo $lista->getTelefone();
-            echo $lista->getCliente();
-            echo $lista->getFuncionario();
-            echo $lista->getEndereco();
-            echo $lista->getBairro();
+            $_SESSION['dadosCliente'] = array(
+                                                $lista->getIDcliente(),
+                                                $lista->getTelefone(),
+                                                $lista->getCliente(),
+                                                $lista->getFuncionario(),
+                                                $lista->getEndereco(),
+                                                $lista->getBairro());
 
-//Dados dos itens parao pedido
-            $listadeitens = new itensPedido();
-            //$listadeitens->setIDProduto($_REQUEST['txtIDProduto']);
-            $listadeitens->setDescricao($_REQUEST['txtDescricaoProduto']);
-            $listadeitens->setQuantidade($_REQUEST['txtQuantidade']);
-            $listadeitens->setPreco($_REQUEST['txtPreco']);
+            }
+            //Dados dos itens parao pedido
+                $lista->setIDProduto($_REQUEST['txtIDProduto']);
+                $lista->setDescricao($_REQUEST['txtDescricaoProduto']);
+                $lista->setQuantidade($_REQUEST['txtQuantidade']);
+                $lista->setPreco($_REQUEST['txtPreco']);
+                //$lista->setGeraID($_SESSION['id']);
+                //echo $_SESSION['id'] = $lista->getGeraID();
+                $_SESSION['itensPedido'] [] = array(
+                                                    $lista->getIDProduto(),
+                                                    $lista->getDescricao(),
+                                                    $lista->getQuantidade(),
+                                                    $lista->getPreco());
 
-            echo $listadeitens->getIDProduto();
-            echo $listadeitens->getDescricao();
-            echo $listadeitens->getQuantidade();
-            echo $listadeitens->getPreco();
+                $itens = $_SESSION['itensPedido'];
+                $dadosCliente = $_SESSION['dadosCliente'];
+          // var_dump($itens);
+            echo "__________________________//________________________<br>";
+               foreach($dadosCliente as $valores){
+                   echo $valores."-";
+               }
+                foreach($itens as $valor){
+                    echo $valor[0];
+                    echo $valor[1];
+                    echo $valor[2];
+                    echo $valor[3];
+                    echo "<br>";
+                }
 
 
 
-
-
-?>
-
+            ?>
+            <form>
+            <button type="submit" formaction="finalizaPedido.php">Finalizar pedido</button>
+            </form>
+            <button type="submit" value="inserir" form="formPedido">Inserir</button>
             <div id="divPreco"></div>
 
         </div>
