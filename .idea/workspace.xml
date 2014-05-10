@@ -33,16 +33,16 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="241" column="84" selection-start="10005" selection-end="10080" vertical-scroll-proportion="-10.423077" vertical-offset="3826" max-vertical-offset="4386">
+            <state line="246" column="30" selection-start="10176" selection-end="10176" vertical-scroll-proportion="-13.692307" vertical-offset="3826" max-vertical-offset="4386">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finalizaPedido.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="finalizaPedido.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.17801048" vertical-offset="0" max-vertical-offset="573">
+            <state line="6" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
@@ -66,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="config.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
+            <state line="3" column="24" selection-start="73" selection-end="73" vertical-scroll-proportion="0.08900524" vertical-offset="0" max-vertical-offset="573">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,6 @@
         <option value="$PROJECT_DIR$/classes/DB.php" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/js/efeito.js" />
-        <option value="$PROJECT_DIR$/classes/config.php" />
         <option value="$PROJECT_DIR$/classes/Crud.php" />
         <option value="$PROJECT_DIR$/css/Montanha.css" />
         <option value="$PROJECT_DIR$/classes/Usuarios.php" />
@@ -140,6 +139,7 @@
         <option value="$PROJECT_DIR$/classes/finalizaPedido.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/finalizaPedido.php" />
+        <option value="$PROJECT_DIR$/classes/config.php" />
       </list>
     </option>
   </component>
@@ -567,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/DB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="85" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="544">
@@ -602,16 +595,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="84" selection-start="10005" selection-end="10080" vertical-scroll-proportion="-10.423077" vertical-offset="3826" max-vertical-offset="4386">
+        <state line="6" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="142" selection-end="142" vertical-scroll-proportion="0.17801048" vertical-offset="0" max-vertical-offset="573">
+        <state line="246" column="30" selection-start="10176" selection-end="10176" vertical-scroll-proportion="-13.692307" vertical-offset="3826" max-vertical-offset="4386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="73" selection-end="73" vertical-scroll-proportion="0.08900524" vertical-offset="0" max-vertical-offset="573">
           <folding />
         </state>
       </provider>
