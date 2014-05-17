@@ -9,7 +9,7 @@ mysql_select_db($db['nome']);
 
 $req = "SELECT * FROM clientes WHERE TELEFONE LIKE '%".$_REQUEST['term']."%'";
 
-$query = mysql_query($req);
+$query = mysql_query($req) or die(mysql_error());
 
 
 
