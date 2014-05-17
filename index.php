@@ -32,7 +32,7 @@ function __autoload($nclasse)
                 source: 'classes/retornaCliente.php',
                 minLength: 1,
                 select: function(evento,conteudo){
-                    console.log(conteudo);
+                    //console.log(conteudo);
                     $('#txtIDCliente').val(conteudo.item.id);
                     $('#txtCliente').val(conteudo.item.nome);
                     $('#txtEndereco').val(conteudo.item.endereco);
@@ -190,40 +190,44 @@ function __autoload($nclasse)
             $lista = new carrinhoPedido();
             //Dados do Cliente para o Pedido
             if(empty($_SESSION['dadosCliente'][0])){
-            $lista->setIDcliente($_REQUEST['txtIDCliente']);
-            $lista->setTelefone($_REQUEST['txtTelefone']);
-            $lista->setCliente($_REQUEST['txtCliente']);
-            $lista->setFuncionario($_REQUEST['txtFuncionario']);
-            $lista->setEndereco($_REQUEST['txtEndereco']);
-            $lista->setBairro($_REQUEST['txtBairro']);
+            $lista->IDCliente = $_REQUEST['txtIDCliente'];
+            $lista->telefone = $_REQUEST['txtTelefone'];
+            $lista->cliente = $_REQUEST['txtCliente'];
+            $lista->funcionario = $_REQUEST['txtFuncionario'];
+            $lista->endereco = $_REQUEST['txtEndereco'];
+            $lista->bairro = $_REQUEST['txtBairro'];
+
             $_SESSION['dadosCliente'] = array(
-                                                $lista->getIDcliente(),
-                                                $lista->getTelefone(),
-                                                $lista->getCliente(),
-                                                $lista->getFuncionario(),
-                                                $lista->getEndereco(),
-                                                $lista->getBairro());
+                                                $lista->IDCliente,
+                                                $lista->telefone,
+                                                $lista->cliente,
+                                                $lista->funcionario,
+                                                $lista->endereco,
+                                                $lista->bairro);
 
             }
             //Dados dos itens parao pedido
-                $lista->setIDProduto($_REQUEST['txtIDProduto']);
-                $lista->setDescricao($_REQUEST['txtDescricaoProduto']);
-                $lista->setQuantidade($_REQUEST['txtQuantidade']);
-                $lista->setPreco($_REQUEST['txtPreco']);
+                @$lista->IDProduto = $_REQUEST['txtIDProduto'];
+                @$lista->descricao = $_REQUEST['txtDescricaoProduto'];
+                @$lista->quantidade = $_REQUEST['txtQuantidade'];
+                @$lista->preco = $_REQUEST['txtPreco'];
                 //$lista->setGeraID($_SESSION['id']);
                 //echo $_SESSION['id'] = $lista->getGeraID();
                 $_SESSION['itensPedido'] [] = array(
-                                                    $lista->getIDProduto(),
-                                                    $lista->getDescricao(),
-                                                    $lista->getQuantidade(),
-                                                    $lista->getPreco());
+                                                    $lista->IDProduto,
+                                                    $lista->descricao,
+                                                    $lista->quantidade,
+                                                    $lista->preco);
 
-                $itens = $_SESSION['itensPedido'];
+                print_r($itens = $_SESSION['itensPedido']);
                 $dadosCliente = $_SESSION['dadosCliente'];
-          // var_dump($itens);
+            //print_r($itens);
+            //print_r($dadosCliente);
+            // var_dump($itens);
+
             echo "__________________________//________________________<br>";
                foreach($dadosCliente as $valores){
-                   echo $valores."-";
+                   echo $valores." ";
                }
                 foreach($itens as $valor){
                     echo $valor[0];
