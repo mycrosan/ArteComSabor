@@ -196,7 +196,10 @@ function __autoload($nclasse)
             $lista->funcionario = $_REQUEST['txtFuncionario'];
             $lista->endereco = $_REQUEST['txtEndereco'];
             $lista->bairro = $_REQUEST['txtBairro'];
+<<<<<<< HEAD
 
+=======
+>>>>>>> 328c4af7d7721ba7dc461bfb256697ceb9cfa7f1
             $_SESSION['dadosCliente'] = array(
                                                 $lista->IDCliente,
                                                 $lista->telefone,
@@ -207,10 +210,18 @@ function __autoload($nclasse)
 
             }
             //Dados dos itens parao pedido
+<<<<<<< HEAD
                 @$lista->IDProduto = $_REQUEST['txtIDProduto'];
                 @$lista->descricao = $_REQUEST['txtDescricaoProduto'];
                 @$lista->quantidade = $_REQUEST['txtQuantidade'];
                 @$lista->preco = $_REQUEST['txtPreco'];
+=======
+
+                $lista->IDProduto = $_REQUEST['txtIDProduto'];
+                $lista->descricao = $_REQUEST['txtDescricaoProduto'];
+                $lista->quantidade = $_REQUEST['txtQuantidade'];
+                $lista->preco = $_REQUEST['txtPreco'];
+>>>>>>> 328c4af7d7721ba7dc461bfb256697ceb9cfa7f1
                 //$lista->setGeraID($_SESSION['id']);
                 //echo $_SESSION['id'] = $lista->getGeraID();
                 $_SESSION['itensPedido'] [] = array(
@@ -224,7 +235,10 @@ function __autoload($nclasse)
             //print_r($itens);
             //print_r($dadosCliente);
             // var_dump($itens);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 328c4af7d7721ba7dc461bfb256697ceb9cfa7f1
             echo "__________________________//________________________<br>";
                foreach($dadosCliente as $valores){
                    echo $valores." ";

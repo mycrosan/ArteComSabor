@@ -7,7 +7,15 @@ $db['pass'] = "";
 mysql_connect($db['host'], $db['user'], $db['pass']);
 mysql_select_db($db['nome']);
 $req = "SELECT * FROM clientes WHERE TELEFONE LIKE '%".$_REQUEST['term']."%'";
+<<<<<<< HEAD
 $query = mysql_query($req) or die(mysql_error());
+=======
+
+$query = mysql_query($req) or die(mysql_error());
+
+
+
+>>>>>>> 328c4af7d7721ba7dc461bfb256697ceb9cfa7f1
 while($row = mysql_fetch_array($query))
 {
   $results[] = array(
