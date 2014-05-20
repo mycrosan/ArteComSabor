@@ -25,12 +25,12 @@ class Usuarios extends Crud {
     }
 
     public function inserir(){
-        $sql = "INSERT INTO $this->table (nome,email) VALUES (:nome, :email)";
-        $stmt = DB::preparaotrem($sql);
-        $stmt->bindParam(':nome', $this->nome);
-        $stmt->bindParam(':email', $this->email);
-        return $stmt->execute();
-     }
+    $sql = "INSERT INTO $this->table (nome,email) VALUES (:nome, :email)";
+    $stmt = DB::preparaotrem($sql);
+    $stmt->bindParam(':nome', $this->nome);
+    $stmt->bindParam(':email', $this->email);
+    return $stmt->execute();
+}
     public function atualizar($id){
 
         $sql = "UPDATE $this->table SET nome = :nome, email = :email WHERE id = :id";
