@@ -16,7 +16,6 @@ class Sessao {
         self::$_sessaoIniciada = true;
         }
     }
-
     public static function set($key, $value)
     {
         $_SESSION[$key][] = $value;
@@ -25,18 +24,15 @@ class Sessao {
     {
         if($segundaChave == true)
         {
-            echo "passou aqui 2";
             if(isset($_SESSION[$key][$segundaChave]))
                 return $_SESSION[$key][$segundaChave];
         }
         else
         {
-            echo "passou aqui 3";
              if (isset($_SESSION[$key]))
                 return $_SESSION[$key];
         }
             return false;
-
     }
     public static function showArray()
     {

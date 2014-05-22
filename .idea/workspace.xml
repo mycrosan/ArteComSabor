@@ -23,31 +23,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="2" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-2.0544465" vertical-offset="3138" max-vertical-offset="3689">
+            <state line="202" column="24" selection-start="7542" selection-end="7542" vertical-scroll-proportion="-11.692307" vertical-offset="3130" max-vertical-offset="3655">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sessao.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Sessao.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/Sessao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="5" selection-start="892" selection-end="892" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="935">
+            <state line="17" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.32849365" vertical-offset="23" max-vertical-offset="867">
               <folding>
-                <marker date="1400725256151" expanded="true" signature="956:1007" placeholder="..." />
+                <marker date="1400731559467" expanded="true" signature="886:937" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="teste2.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teste2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="18" selection-start="120" selection-end="120" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -123,20 +114,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ArteComSabor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD_OOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArteComSabor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -250,24 +227,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/teste2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="120" selection-end="120" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
+        <state line="13" column="52" selection-start="343" selection-end="343" vertical-scroll-proportion="0.42418426" vertical-offset="0" max-vertical-offset="521">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="24" selection-start="7542" selection-end="7542" vertical-scroll-proportion="-11.692307" vertical-offset="3130" max-vertical-offset="3655">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Sessao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="892" selection-end="892" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="935">
+        <state line="17" column="5" selection-start="331" selection-end="331" vertical-scroll-proportion="0.32849365" vertical-offset="23" max-vertical-offset="867">
           <folding>
-            <marker date="1400725256151" expanded="true" signature="956:1007" placeholder="..." />
+            <marker date="1400731559467" expanded="true" signature="886:937" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="2" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-2.0544465" vertical-offset="3138" max-vertical-offset="3689">
-          <folding />
         </state>
       </provider>
     </entry>

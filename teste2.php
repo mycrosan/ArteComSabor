@@ -1,5 +1,17 @@
 <?php
-$actors = array('Donny','Walter','Bunny',array('Dude','El Duderino','his Dudeness','Duder' )
+$canadians = array(
+    'Bieber' => TRUE,
+    'Neil Young' => TRUE,
+    'Deadmau5' => TRUE,
+    'Barack Obama' => FALSE,
+    'John Candy' => TRUE,
 );
-print($actors[3][0]);
+foreach ($canadians as $name => $real) {
+    if($real) {
+        print $name . ' is Canadian ';echo "<br>";
+    }
+    elseif(!$real) {
+        print $name . ', not Canadian ';echo "<br>";
+    }
+}
 ?>

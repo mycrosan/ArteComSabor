@@ -194,15 +194,13 @@ $lista->quantidade = $_REQUEST['txtQuantidade'];
 $lista->preco = $_REQUEST['txtPreco'];
 //$lista->setGeraID($_SESSION['id']);
 //echo $_SESSION['id'] = $lista->getGeraID();
-
 Sessao::set('itensPedido',array(
     'idproduto'=>$lista->IDProduto,
     'descricao'=>$lista->descricao,
     'quantidade'=>$lista->quantidade,
     'preco'=>$lista->preco));
 }
-
-    Sessao::showValues('dadosClientes');
+    Sessao::showArray();
 }
 
 
