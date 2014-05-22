@@ -1,10 +1,11 @@
-<?php session_start(); ?>
+<?php Sessao::iniciaSessao()?>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <?php
 //ARQUIVO 5
 function __autoload($nclasse)
 {
     require_once 'classes/' . $nclasse . '.php';
+
 }
 ?>
 <!DOCTYPE HTML>
@@ -59,192 +60,153 @@ function __autoload($nclasse)
 
     </script>
 
-    <script type="text/javascript">
-        /*
-         $(document).ready(function(){
-         $('#resultadoconsulta').hide();
-         $('input').blur(function(){ //Quando clicado no elemento input
-         alert('ola');
-
-         $.ajax({
-         url: 'arquivo.html',
-         success: function(data) {
-         // $('#conteudo').html(data);
-         // alert(data);
-         },
-         beforeSend: function(){
-         $('.loader').css({display:"block"});
-         },
-         complete: function(){
-         $('.loader').css({display:"none"});
-         }
-         });
-         });
-         });
-         */
-    </script>
-
 </head>
 
 <body>
-            <?php
-            // Objeto para inserir
-            $usuario = new Usuarios();
-            if (isset($_POST['cadastrar'])):
-                $nome = $_POST['nome'];
-                $email = $_POST['email'];
-                $usuario->configurarNome($nome);
-                $usuario->configuraEmail($email);
+<?php
+// Objeto para inserir
+$usuario = new Usuarios();
+if (isset($_POST['cadastrar'])):
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $usuario->configurarNome($nome);
+    $usuario->configuraEmail($email);
 
-                # Insert
-                if ($usuario->inserir()) {
-                    echo "Inserido com sucesso!";
-                } else {
-                    echo "Deu pau";
-                }
+    # Insert
+    if ($usuario->inserir()) {
+        echo "Inserido com sucesso!";
+    } else {
+        echo "Deu pau";
+    }
 
-            endif;
-            ?>
-                <h1 class="muted">Pedidos para entrega ACS</h1>
-                <nav class="navbar ">
-                        <div class="container">
-                            <ul class="nav nav-pills">
-                                <li class="active"><a href="index.php">Página inicial</a></li>
-                                <li class="active"><a href="classes/destroiSessao.php">Destroi Sessãol</a></li>
-                                <li class="active"><a href="finalizaPedido.php">Finalizar Pedido</a></li>
+endif;
+?>
+<h1 class="muted">Pedidos para entrega ACS</h1>
+<nav class="navbar ">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="active"><a href="index.php">Página inicial</a></li>
+            <li class="active"><a href="classes/destroiSessao.php">Destroi Sessãol</a></li>
+            <li class="active"><a href="finalizaPedido.php">Finalizar Pedido</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+</header>
 
+<?php
+if (isset($_POST['atualizar'])):
+    $id = $_POST['id'];
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $usuario->configurarNome($nome);
+    $usuario->configuraEmail($email);
+    if ($usuario->atualizar($id)) {
+        echo "Atualizado certinho";
+    } else {
+        echo "Opa algo não saiu como deveria";
+    }
 
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+endif;
+?>
+<?php
+if (isset ($_GET['acao']) && $_GET['acao'] == 'deletar'):
+    $id = (int)$_GET['id'];
+    if ($usuario->apagar($id)) {
+        echo "Apagou";
+    }
+endif;
+?>
+<?php
+if (isset($_GET['acao']) && $_GET['acao'] == 'editar') {
+    $id = (int)$_GET['id'];
+    $resultado = $usuario->encontrar($id);
+    ?>
+    <form method="post" action="">
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-user"></i></span>
+            <input type="text" name="nome" value="<?php echo $resultado->nome ?>" placeholder="Nome:"/>
+        </div>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-envelope"></i></span>
+            <input type="text" name="email" value="<?php echo $resultado->email ?>" placeholder="E-mail:"/>
+        </div>
+        <input type="hidden" name="id" value="<?php echo $resultado->id; ?>">
+        <br/>
+        <input type="submit" name="atualizar" class="btn btn-primary" value="Atualizar">
+    </form>
+<?php } else { ?>
+    <form id="formPedido" name="formPedido" method="post">
+        <h3>Dados do Cliente</h3>
+        <input type="hidden" id="txtIDCliente" name="txtIDCliente" />
+        <input type="text" id="txtTelefone" name="txtTelefone" placeholder="Telefone"/>
+        <input type="text" id="txtCliente" name="txtCliente"  placeholder="Cliente"/>
+        <input type="text" id="txtEndereco" name="txtEndereco" placeholder="Endereço"/>
+        <input type="text" id="txtBairro" name="txtBairro" placeholder="Bairro"/>
+        <input type="text" id="txtFuncionario" name="txtFuncionario" placeholder="Funcionario"/>
+        <h2>Produtos:</h2>
+        <input type="hidden" id="txtIDProduto" name="txtIDProduto" />
+        <input type="text" id="txtDescricaoProduto" name="txtDescricaoProduto" placeholder="Descrição do Produto"/>
+        <select name="txtQuantidade">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
 
-            <?php
-            if (isset($_POST['atualizar'])):
-                $id = $_POST['id'];
-                $nome = $_POST['nome'];
-                $email = $_POST['email'];
-                $usuario->configurarNome($nome);
-                $usuario->configuraEmail($email);
-                if ($usuario->atualizar($id)) {
-                    echo "Atualizado certinho";
-                } else {
-                    echo "Opa algo não saiu como deveria";
-                }
+        <input type="text" id="txtPreco" name="txtPreco" placeholder="Preço"/>
+    </form>
+    <button type="submit" class="btn btn-primary btn-lg" value="inserir" form="formPedido">Inserir</button>
+<?php }; ?>
+<?php
 
-            endif;
-            ?>
-            <?php
-            if (isset ($_GET['acao']) && $_GET['acao'] == 'deletar'):
-                $id = (int)$_GET['id'];
-                if ($usuario->apagar($id)) {
-                    echo "Apagou";
-                }
-            endif;
-            ?>
-            <?php
-            if (isset($_GET['acao']) && $_GET['acao'] == 'editar') {
-                $id = (int)$_GET['id'];
-                $resultado = $usuario->encontrar($id);
-                ?>
-                <form method="post" action="">
-                    <div class="input-prepend">
-                        <span class="add-on"><i class="icon-user"></i></span>
-                        <input type="text" name="nome" value="<?php echo $resultado->nome ?>" placeholder="Nome:"/>
-                    </div>
-                    <div class="input-prepend">
-                        <span class="add-on"><i class="icon-envelope"></i></span>
-                        <input type="text" name="email" value="<?php echo $resultado->email ?>" placeholder="E-mail:"/>
-                    </div>
-                    <input type="hidden" name="id" value="<?php echo $resultado->id; ?>">
-                    <br/>
-                    <input type="submit" name="atualizar" class="btn btn-primary" value="Atualizar">
-                </form>
-            <?php } else { ?>
-                <form id="formPedido" method="post">
-                    <h3>Dados do Cliente</h3>
-                    <input type="hidden" id="txtIDCliente" name="txtIDCliente" />
-                    <input type="text" id="txtTelefone" name="txtTelefone" placeholder="Telefone"/>
-                    <input type="text" id="txtCliente" name="txtCliente"  placeholder="Cliente"/>
-                    <input type="text" id="txtEndereco" name="txtEndereco" placeholder="Endereço"/>
-                    <input type="text" id="txtBairro" name="txtBairro" placeholder="Bairro"/>
-                    <input type="text" id="txtFuncionario" name="txtFuncionario" placeholder="Funcionario"/>
-                    <h2>Produtos:</h2>
-                    <input type="hidden" id="txtIDProduto" name="txtIDProduto" />
-                    <input type="text" id="txtDescricaoProduto" name="txtDescricaoProduto" placeholder="Descrição do Produto"/>
-                    <input type="text" id="txtQuantidade" value="1" name="txtQuantidade" placeholder="Quantidade"/>
-                    <input type="text" id="txtPreco" name="txtPreco" placeholder="Preço"/>
-                </form>
-                <button type="submit" class="btn btn-primary btn-lg" value="inserir" form="formPedido">Inserir</button>
+$lista = new carrinhoPedido();
+//Dados do Cliente para o Pedido
+if($_SERVER['REQUEST_METHOD']=='POST'){
+if(isset($_POST['txtCliente'])and(empty($_SESSION['dadosCliente'][0]))){
+    $lista->IDCliente = $_REQUEST['txtIDCliente'];
+    $lista->telefone = $_REQUEST['txtTelefone'];
+    $lista->cliente = $_REQUEST['txtCliente'];
+    $lista->funcionario = $_REQUEST['txtFuncionario'];
+    $lista->endereco = $_REQUEST['txtEndereco'];
+    $lista->bairro = $_REQUEST['txtBairro'];
+    Sessao::set('dadosCliente',array(
+        'idcliente' => $lista->IDCliente,
+        'telefone' => $lista->telefone,
+        'cliente'  => $lista->cliente,
+        'funcionario' =>$lista->funcionario,
+        'endereco' => $lista->endereco,
+        'bairro' =>$lista->bairro));
 
+}
+}
+//Dados dos itens parao pedidoi
+if($_SERVER['REQUEST_METHOD']=='POST'){
+if(isset($_POST['txtDescricaoProduto'])){
 
+@$lista->IDProduto = $_REQUEST['txtIDProduto'];
+@$lista->descricao = $_REQUEST['txtDescricaoProduto'];
+@$lista->quantidade = $_REQUEST['txtQuantidade'];
+@$lista->preco = $_REQUEST['txtPreco'];
+$lista->IDProduto = $_REQUEST['txtIDProduto'];
+$lista->descricao = $_REQUEST['txtDescricaoProduto'];
+$lista->quantidade = $_REQUEST['txtQuantidade'];
+$lista->preco = $_REQUEST['txtPreco'];
+//$lista->setGeraID($_SESSION['id']);
+//echo $_SESSION['id'] = $lista->getGeraID();
 
+Sessao::set('itensPedido',array(
+    'idproduto'=>$lista->IDProduto,
+    'descricao'=>$lista->descricao,
+    'quantidade'=>$lista->quantidade,
+    'preco'=>$lista->preco));
+}
 
-
-            <?php }; ?>
-            <?php
-
-            $lista = new carrinhoPedido();
-            //Dados do Cliente para o Pedido
-            if(empty($_SESSION['dadosCliente'][0])){
-            $lista->IDCliente = $_REQUEST['txtIDCliente'];
-            $lista->telefone = $_REQUEST['txtTelefone'];
-            $lista->cliente = $_REQUEST['txtCliente'];
-            $lista->funcionario = $_REQUEST['txtFuncionario'];
-            $lista->endereco = $_REQUEST['txtEndereco'];
-            $lista->bairro = $_REQUEST['txtBairro'];
-
-            $_SESSION['dadosCliente'] = array(
-                                                $lista->IDCliente,
-                                                $lista->telefone,
-                                                $lista->cliente,
-                                                $lista->funcionario,
-                                                $lista->endereco,
-                                                $lista->bairro);
-
-            }
-            //Dados dos itens parao pedido
-
-                @$lista->IDProduto = $_REQUEST['txtIDProduto'];
-                @$lista->descricao = $_REQUEST['txtDescricaoProduto'];
-                @$lista->quantidade = $_REQUEST['txtQuantidade'];
-                @$lista->preco = $_REQUEST['txtPreco'];
-
-
-                $lista->IDProduto = $_REQUEST['txtIDProduto'];
-                $lista->descricao = $_REQUEST['txtDescricaoProduto'];
-                $lista->quantidade = $_REQUEST['txtQuantidade'];
-                $lista->preco = $_REQUEST['txtPreco'];
-                //$lista->setGeraID($_SESSION['id']);
-                //echo $_SESSION['id'] = $lista->getGeraID();
-                $_SESSION['itensPedido'] [] = array(
-                                                    $lista->IDProduto,
-                                                    $lista->descricao,
-                                                    $lista->quantidade,
-                                                    $lista->preco);
-
-                print_r($itens = $_SESSION['itensPedido']);
-                $dadosCliente = $_SESSION['dadosCliente'];
-            //print_r($itens);
-            //print_r($dadosCliente);
-            // var_dump($itens);
-            echo "__________________________//________________________<br>";
-               foreach($dadosCliente as $valores){
-                   echo $valores." ";
-               }
-                foreach($itens as $valor){
-                    echo $valor[0];
-                    echo $valor[1];
-                    echo $valor[2];
-                    echo $valor[3];
-                    echo "<br>";
-                }
+    Sessao::showValues('dadosClientes');
+}
 
 
 
-            ?>
-
+?>
 </body>
-
 </html>
