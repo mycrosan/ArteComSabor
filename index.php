@@ -204,4 +204,5 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
        // Sessao::showValues('dadosCliente');
 
     Sessao::showArray();
+    //teste
 }
