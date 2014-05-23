@@ -93,8 +93,6 @@ endif;
     </div>
 </nav>
 </body>
-<<<<<<< HEAD
-
 <?php
 if (isset($_POST['atualizar'])):
     $id = $_POST['id'];
@@ -200,9 +198,11 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             'preco'=>$lista->preco));
     }
    $valores = Sessao::get('dadosCliente');
-
+    foreach($valores as $dados){
+        echo $dados;
+    }
        // Sessao::showValues('dadosCliente');
 
-    Sessao::showArray();
+    //Sessao::showArray();
     //teste
 }
