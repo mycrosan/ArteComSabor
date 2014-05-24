@@ -40,12 +40,33 @@ class Sessao {
         print_r($_SESSION);
         echo '</pre>';
     }
-    public static function showValues($key , $value = false)
+    public static function showValues($key , $value)
     {
-        foreach ($_SESSION[$key] as $key => $valor){
-            echo $valor;
+        echo"<table class='table table-condensed'>";
+        echo"<tr>";
+        $cont = 0;
+        foreach($_SESSION[$key] as $valor2){
+        foreach($value as $valores2){
+            $num = count($value);
+            if($cont < $num){
+            echo "<th>$valores2</th>";
+            }
+            $cont += 1;
         }
 
+    }
+        echo "</tr>";
+        foreach ($_SESSION[$key] as $valor){
+
+           foreach($value as $valores){
+               echo "<td>".$valor[$valores]."</td>";
+           }
+            echo"</tr>";
+
+        }
+        echo "<tr>";
+        echo"</tr>";
+        echo "</table>";
     }
 
 } 

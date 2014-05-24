@@ -163,14 +163,14 @@ $lista = new carrinhoPedido();
 //Dados do Cliente para o Pedido
 if($_SERVER['REQUEST_METHOD']=='POST'){
     if(isset($_POST['txtCliente'])and(empty($_SESSION['dadosCliente'][0]))){
-        $lista->IDCliente = $_REQUEST['txtIDCliente'];
+        $lista->IDcliente = $_REQUEST['txtIDCliente'];
         $lista->telefone = $_REQUEST['txtTelefone'];
         $lista->cliente = $_REQUEST['txtCliente'];
         $lista->funcionario = $_REQUEST['txtFuncionario'];
         $lista->endereco = $_REQUEST['txtEndereco'];
         $lista->bairro = $_REQUEST['txtBairro'];
         Sessao::set('dadosCliente',array(
-            'idcliente' => $lista->IDCliente,
+            'idcliente' => $lista->IDcliente,
             'telefone' => $lista->telefone,
             'cliente'  => $lista->cliente,
             'funcionario' =>$lista->funcionario,
@@ -197,10 +197,16 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
             'quantidade'=>$lista->quantidade,
             'preco'=>$lista->preco));
     }
-   $valores = Sessao::get('dadosCliente');
-    foreach($valores as $dados){
-        echo $dados;
-    }
+            $valores = new Sessao();
+            echo"<h3>Cliente</h3>";
+            $valores->showValues('dadosCliente',array('idcliente','telefone','cliente','funcionario','endereco','bairro'));
+            echo "<h3>Produtos</h3>";
+            $valores->showValues('itensPedido',array('idproduto','descricao','quantidade','preco'));
+
+
+
+
+
        // Sessao::showValues('dadosCliente');
 
     //Sessao::showArray();
