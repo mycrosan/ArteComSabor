@@ -170,12 +170,12 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $lista->endereco = $_REQUEST['txtEndereco'];
         $lista->bairro = $_REQUEST['txtBairro'];
         Sessao::set('dadosCliente',array(
-            'idcliente' => $lista->IDcliente,
-            'telefone' => $lista->telefone,
-            'cliente'  => $lista->cliente,
-            'funcionario' =>$lista->funcionario,
-            'endereco' => $lista->endereco,
-            'bairro' =>$lista->bairro));
+            'COD' => $lista->IDcliente,
+            'FONE' => $lista->telefone,
+            'NOME'  => $lista->cliente,
+            'FUNC.' =>$lista->funcionario,
+            'ENDEREÇO' => $lista->endereco,
+            'BAIRRO' =>$lista->bairro));
     }
 }
 //Dados dos itens parao pedidoi
@@ -192,16 +192,16 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 //$lista->setGeraID($_SESSION['id']);
 //echo $_SESSION['id'] = $lista->getGeraID();
         Sessao::set('itensPedido',array(
-            'idproduto'=>$lista->IDProduto,
-            'descricao'=>$lista->descricao,
-            'quantidade'=>$lista->quantidade,
-            'preco'=>$lista->preco));
+            'COD'=>$lista->IDProduto,
+            'DESCRIÇÃO'=>$lista->descricao,
+            'QUANT.'=>$lista->quantidade,
+            'PREÇO'=>$lista->preco));
     }
             $valores = new Sessao();
-            echo"<h3>Cliente</h3>";
-            $valores->showValues('dadosCliente',array('idcliente','telefone','cliente','funcionario','endereco','bairro'));
-            echo "<h3>Produtos</h3>";
-            $valores->showValues('itensPedido',array('idproduto','descricao','quantidade','preco'));
+            echo"<h4>Cliente:</h4>";
+            $valores->showValues('dadosCliente',array('COD','FONE','NOME','FUNC.','ENDEREÇO','BAIRRO'));
+            echo "<h4>Produtos:</h4>";
+            $valores->showValues('itensPedido',array('COD','DESCRIÇÃO','QUANT.','PREÇO'));
 
 
 
