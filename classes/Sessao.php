@@ -34,7 +34,7 @@ class Sessao {
         }
             return false;
     }
-    public static function showArray()
+    public static function showArray($key = false)
     {
         echo '<pre>';
         print_r($_SESSION);

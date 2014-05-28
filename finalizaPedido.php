@@ -33,6 +33,38 @@ echo"<h4>Cliente:</h4>";
 $valores->showValues('dadosCliente',array('COD','FONE','NOME','FUNC.','ENDEREÇO','BAIRRO'));
 echo "<h4>Produtos:</h4>";
 $valores->showValues('itensPedido',array('COD','DESCRIÇÃO','QUANT.','PREÇO'));
+
+
+//echo $_SESSION['dadosCliente'][0]['COD'];
+
+//if($_POST){
+$inserir = new finalizaPdv();
+$inserir->setTipo($_SESSION['dadosCliente'][0]['COD']);
+$inserir->setQte($_SESSION['dadosCliente'][0]['FONE']);
+$inserir->setValor($_SESSION['dadosCliente'][0]['NOME']);
+$inserir->setValor($_SESSION['dadosCliente'][0]['FUNC']);
+$inserir->setMarca($_SESSION['dadosCliente'][0]['ENDEREÇO']);
+$inserir->setImp($_SESSION['dadosCliente'][0]['BAIRRO']);
+$inserir->setClasse($_SESSION['dadosCliente'][0]['BAIRRO']);
+$inserir->setSituacao($_SESSION['dadosCliente'][0]['BAIRRO']);
+$inserir->setAltera($_SESSION['dadosCliente'][0]['BAIRRO']);
+$inserir->setIdfuncionario($_SESSION['dadosCliente'][0]['BAIRRO']);
+$inserir->setIdcliente($_SESSION['dadosCliente'][0]['COD']);
+
+$inserir->inserir();
+
+if($inserir){
+    echo "Dados inseridos";
+}else{
+    echo "Tem algum problema";
+}
+//}
+
+
+
+
+
+
 ?>
 <button type="submit" value="inserir" form="formPedido">IMPRIMIR PEDIDO</button>
 <button type="submit" value="inserir" form="formPedido">ENVIAR PARA COZINHA</button>
