@@ -11,7 +11,7 @@
 /**
  * Class itensPedido
  */
-class itensCardapio {
+class Cardapio extends Crud {
     //     Atributo dos items do pedido do cliente
     protected $tabela = 'cardapio';
     private $id_cardapio;
@@ -25,12 +25,16 @@ class itensCardapio {
     private $pdv_ID_PDV;
     private $produto_ID_PRODUTO;
 
+    /**
+     * @param mixed $data_cardapio
+     */
     public function __get($key){
         return $this->$key;
     }
     public function __set($key,$value){
         $this->$key = $value;
     }
+
     public function inserir(){
         $sql = "INSERT INTO $this->table (TIPO, QTE, VALOR, DATA, HORA, CLASSE, SECAO, pdv_ID_PDV, produtos_ID_PRODUTO) VALUES (:tipo, :qte, :valor, :data_cardapio, :hora, :classe, :secao, :pdv_ID_PDV, :idcliente)";
         $stmt = DB::preparaotrem($sql);

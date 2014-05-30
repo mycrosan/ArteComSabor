@@ -18,8 +18,9 @@
     <script type="text/javascript" src="js/efeito.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.4.js"></script>
-    </head>
+</head>
 <?php
+date_default_timezone_set('America/Sao_Paulo');
 //ARQUIVO 5
 function __autoload($nclasse)
 {
@@ -38,21 +39,32 @@ $valores->showValues('itensPedido',array('COD','DESCRIÇÃO','QUANT.','PREÇO'))
 //echo $_SESSION['dadosCliente'][0]['COD'];
 
 //if($_POST){
-$inserir = new finalizaPdv();
-$inserir->setTipo($_SESSION['dadosCliente'][0]['COD']);
-$inserir->setQte($_SESSION['dadosCliente'][0]['FONE']);
-$inserir->setValor($_SESSION['dadosCliente'][0]['NOME']);
-$inserir->setValor($_SESSION['dadosCliente'][0]['FUNC']);
-$inserir->setMarca($_SESSION['dadosCliente'][0]['ENDEREÇO']);
-$inserir->setImp($_SESSION['dadosCliente'][0]['BAIRRO']);
-$inserir->setClasse($_SESSION['dadosCliente'][0]['BAIRRO']);
-$inserir->setSituacao($_SESSION['dadosCliente'][0]['BAIRRO']);
-$inserir->setAltera($_SESSION['dadosCliente'][0]['BAIRRO']);
-$inserir->setIdfuncionario($_SESSION['dadosCliente'][0]['BAIRRO']);
-$inserir->setIdcliente($_SESSION['dadosCliente'][0]['COD']);
+$inserirPdv = new Pdv();
+//$inserirPdv->setTipo($_SESSION['dadosCliente'][0]['COD']);
+//$inserirPdv->setQte($_SESSION['dadosCliente'][0]['FONE']);
+//$inserirPdv->setValor($_SESSION['dadosCliente'][0]['NOME']);
+//$inserirPdv->setMarca($_SESSION['dadosCliente'][0]['ENDEREÇO']);
+//$inserirPdv->setImp($_SESSION['dadosCliente'][0]['BAIRRO']);
+//$inserirPdv->setClasse($_SESSION['dadosCliente'][0]['BAIRRO']);
+$inserirPdv->setStatus($_SESSION['dadosCliente'][0]['BAIRRO']);
+//$inserirPdv->setAltera($_SESSION['dadosCliente'][0]['BAIRRO']);
+$inserirPdv->setIdfuncionario($_SESSION['dadosCliente'][0]['FUNC.']);
+$inserirPdv->setIdcliente($_SESSION['dadosCliente'][0]['COD']);
+$inserirPdv->setSessao(session_id());
+$inserirPdv->setDataPdv(date("Y/m/d"));
+$inserirPdv->setHora(date("H:i:s"));
 
-$inserir->inserir();
+echo $inserirPdv->getHora();
 
+$inserirPdv->inserir();
+/*
+$inserirPdv = new Cardapio();
+//$idPedido = $inserirPdv->(session_id());
+foreach($_SESSION['itensPedido'] as $itens){
+    $inserirPdv->setProdutoIDPRODUTO($itens['COD']);
+    $inserirPdv->setQte($itens['QUANT']);
+   // $inserirPdv->setPdvIDPDV($itens['QUANT']);
+}
 if($inserir){
     echo "Dados inseridos";
 }else{
@@ -60,7 +72,7 @@ if($inserir){
 }
 //}
 
-
+*/
 
 
 

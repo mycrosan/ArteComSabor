@@ -1,6 +1,6 @@
 
 <?php
-class carrinhoPedido extends itensCardapio{
+class Cliente{
 //Atributos do pedido do cliente
     private $IDcliente;
     private $telefone;
@@ -8,11 +8,6 @@ class carrinhoPedido extends itensCardapio{
     private $funcionario;
     private $endereco;
     private $bairro;
-
-//Atributos da lista de item do pedido do cliente
-
-    private $dataHora;
-    private $previsaoDeEntrega;
 
     public function __get($key){
     return $this->$key;

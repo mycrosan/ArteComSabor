@@ -98,20 +98,7 @@ class finalizaPdv extends Crud{
     /**
      * @param mixed $instancia
      */
-    public static function setInstancia($instancia)
-    {
-        self::$instancia = $instancia;
-    }
-
-    /**
-     * @return mixed
-     */
-    public static function getInstancia()
-    {
-        return self::$instancia;
-    }
-
-    /**
+      /**
      * @param mixed $marca
      */
     public function setMarca($marca)
@@ -194,9 +181,9 @@ class finalizaPdv extends Crud{
 
 
     public function inserir(){
-        $sql = "INSERT INTO $this->table (TIPO, QTE, VALOR, MARCA,IMP,CLASSE,SITUACAO,ALTERA,funcionarios_ID_FUNCIONARIO,clientes_ID_CLIENTE) VALUES (:tipo, :qte,:valor,:marca,:imp,:classe,:situacao,:altera,:idfuncionario,:idcliente)";
+        $sql = "INSERT INTO $this->tablepdv (TIPO, QTE, VALOR, MARCA,IMP ,CLASSE, SITUACAO, ALTERA, funcionarios_ID_FUNCIONARIO, clientes_ID_CLIENTE) VALUES (:tipo, :qte,:valor,:marca,:imp,:classe,:situacao,:altera,:idfuncionario,:idcliente)";
         $stmt = DB::preparaotrem($sql);
-        $stmt->bindParam(':tipo', $this->nome);
+        $stmt->bindParam(':tipo', $this->tipo);
         $stmt->bindParam(':qte', $this->qte);
         $stmt->bindParam(':valor', $this->valor);
         $stmt->bindParam(':marca', $this->marca);
@@ -208,10 +195,12 @@ class finalizaPdv extends Crud{
         $stmt->bindParam(':idcliente', $this->idcliente);
         return $stmt->execute();
     }
+    public function inserirCardapio(){
 
+    }
     public function atualizar($id)
     {
-        $sql = "UPDATE $this->table SET nome = :nome, email = :email WHERE id = :id";
+        $sql = "UPDATE $this->tablepdv SET nome = :nome, email = :email WHERE id = :id";
         $stmt = DB::preparaotrem($sql);
         $stmt->bindParam(':nome', $this->nome);
         $stmt->bindParam(':email', $this->email);

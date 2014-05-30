@@ -1,6 +1,7 @@
 <?php Sessao::iniciaSessao()?>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <?php
+date_default_timezone_set('America/Sao_Paulo');
 //ARQUIVO 5
 function __autoload($nclasse)
 {
@@ -51,7 +52,7 @@ function __autoload($nclasse)
         <input type="text" id="txtCliente" name="txtCliente"  placeholder="Cliente"/>
         <input type="text" id="txtEndereco" name="txtEndereco" placeholder="Endereço"/>
         <input type="text" id="txtBairro" name="txtBairro" placeholder="Bairro"/>
-        <input type="text" id="txtFuncionario" name="txtFuncionario" placeholder="Funcionario"/>
+        <input type="text" id="txtFuncionario" name="txtFuncionario" value ="1" placeholder="Funcionario"/>
         <h2>Produtos:</h2>
         <input type="hidden" id="txtIDProduto" name="txtIDProduto" />
         <input type="text" id="txtDescricaoProduto" name="txtDescricaoProduto" placeholder="Descrição do Produto"/>
@@ -67,43 +68,46 @@ function __autoload($nclasse)
     <button type="submit" class="btn btn-primary btn-lg" value="inserir" form="formPedido">Inserir</button>
 <?php
 
-$lista = new carrinhoPedido();
+$cliente = new Cliente();
 //Dados do Cliente para o Pedido
 if($_SERVER['REQUEST_METHOD']=='POST'){
     if(isset($_POST['txtCliente'])and(empty($_SESSION['dadosCliente'][0]))){
-        $lista->IDcliente = $_REQUEST['txtIDCliente'];
-        $lista->telefone = $_REQUEST['txtTelefone'];
-        $lista->cliente = $_REQUEST['txtCliente'];
-        $lista->funcionario = $_REQUEST['txtFuncionario'];
-        $lista->endereco = $_REQUEST['txtEndereco'];
-        $lista->bairro = $_REQUEST['txtBairro'];
+        $cliente->IDcliente = $_REQUEST['txtIDCliente'];
+        $cliente->telefone = $_REQUEST['txtTelefone'];
+        $cliente->cliente = $_REQUEST['txtCliente'];
+        $cliente->funcionario = $_REQUEST['txtFuncionario'];
+        $cliente->endereco = $_REQUEST['txtEndereco'];
+        $cliente->bairro = $_REQUEST['txtBairro'];
         Sessao::set('dadosCliente',array(
-            'COD' => $lista->IDcliente,
-            'FONE' => $lista->telefone,
-            'NOME'  => $lista->cliente,
-            'FUNC.' =>$lista->funcionario,
-            'ENDEREÇO' => $lista->endereco,
-            'BAIRRO' =>$lista->bairro));
+            'COD' => $cliente->IDcliente,
+            'FONE' => $cliente->telefone,
+            'NOME'  => $cliente->cliente,
+            'FUNC.' =>$cliente->funcionario,
+            'ENDEREÇO' => $cliente->endereco,
+            'BAIRRO' =>$cliente->bairro));
     }
 }
 //Dados dos itens parao pedidoi
+
+$itens = new Cardapio();
 if($_SERVER['REQUEST_METHOD']=='POST'){
     if(isset($_POST['txtDescricaoProduto'])){
-        @$lista->IDProduto = $_REQUEST['txtIDProduto'];
-        @$lista->descricao = $_REQUEST['txtDescricaoProduto'];
-        @$lista->quantidade = $_REQUEST['txtQuantidade'];
-        @$lista->preco = $_REQUEST['txtPreco'];
-        $lista->IDProduto = $_REQUEST['txtIDProduto'];
-        $lista->descricao = $_REQUEST['txtDescricaoProduto'];
-        $lista->quantidade = $_REQUEST['txtQuantidade'];
-        $lista->preco = $_REQUEST['txtPreco'];
+        $itens->IDProduto = $_REQUEST['txtIDProduto'];
+        $itens->descricao = $_REQUEST['txtDescricaoProduto'];
+        $itens->quantidade = $_REQUEST['txtQuantidade'];
+        $itens->preco = $_REQUEST['txtPreco'];
+        $itens->IDProduto = $_REQUEST['txtIDProduto'];
+        $itens->descricao = $_REQUEST['txtDescricaoProduto'];
+        $itens->quantidade = $_REQUEST['txtQuantidade'];
+        $itens->preco = $_REQUEST['txtPreco'];
+        $itens->sessao = session_id();
 //$lista->setGeraID($_SESSION['id']);
 //echo $_SESSION['id'] = $lista->getGeraID();
         Sessao::set('itensPedido',array(
-            'COD'=>$lista->IDProduto,
-            'DESCRIÇÃO'=>$lista->descricao,
-            'QUANT.'=>$lista->quantidade,
-            'PREÇO'=>$lista->preco));
+            'COD'=>$itens->IDProduto,
+            'DESCRIÇÃO'=>$itens->descricao,
+            'QUANT.'=>$itens->quantidade,
+            'PREÇO'=>$itens->preco));
     }
     $valores = new Sessao();
     echo"<h4>Cliente:</h4>";
