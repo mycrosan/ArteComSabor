@@ -53,17 +53,15 @@ $inserirPdv->setIdcliente($_SESSION['dadosCliente'][0]['COD']);
 $inserirPdv->setSessao(session_id());
 $inserirPdv->setDataPdv(date("Y/m/d"));
 $inserirPdv->setHora(date("H:i:s"));
-
-echo $inserirPdv->getHora();
-
 $inserirPdv->inserir();
-/*
-$inserirPdv = new Cardapio();
-//$idPedido = $inserirPdv->(session_id());
+
+$inserirCardapio = new Cardapio();
+$idPedido = session_id();
 foreach($_SESSION['itensPedido'] as $itens){
-    $inserirPdv->setProdutoIDPRODUTO($itens['COD']);
-    $inserirPdv->setQte($itens['QUANT']);
-   // $inserirPdv->setPdvIDPDV($itens['QUANT']);
+    $inserirCardapio->setProdutoIDPRODUTO($itens['COD']);
+    $inserirCardapio->setQte($itens['QUANT']);
+    //$inserirCardapio->setPdvIDPDV($idPedido);
+    $inserirCardapio->inserir();
 }
 if($inserir){
     echo "Dados inseridos";
@@ -72,7 +70,7 @@ if($inserir){
 }
 //}
 
-*/
+
 
 
 

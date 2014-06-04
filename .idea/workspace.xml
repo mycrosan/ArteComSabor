@@ -26,7 +26,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="47" selection-start="158" selection-end="158" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="2227">
+            <state line="3" column="47" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2227">
               <folding />
             </state>
           </provider>
@@ -35,11 +35,8 @@
       <file leaf-file-name="Pdv.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Pdv.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="249" column="47" selection-start="4638" selection-end="4638" vertical-scroll-proportion="-83.0" vertical-offset="0" max-vertical-offset="4539">
-              <folding>
-                <marker date="1401415171379" expanded="true" signature="3648:3920" placeholder="INSERT INTO ..." />
-                <marker date="1401415171379" expanded="true" signature="4736:4806" placeholder="UPDATE $this..." />
-              </folding>
+            <state line="249" column="47" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.0" vertical-offset="4233" max-vertical-offset="4539">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,11 +44,10 @@
       <file leaf-file-name="Cardapio.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Cardapio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="5" selection-start="743" selection-end="743" vertical-scroll-proportion="-13.538462" vertical-offset="243" max-vertical-offset="1156">
+            <state line="196" column="51" selection-start="3543" selection-end="3543" vertical-scroll-proportion="0.0" vertical-offset="3332" max-vertical-offset="3723">
               <folding>
-                <element signature="e#7#89#0" expanded="true" />
-                <marker date="1401385889323" expanded="true" signature="792:989" placeholder="INSERT INTO ..." />
-                <marker date="1401385889323" expanded="true" signature="1624:1691" placeholder="UPDATE $this..." />
+                <marker date="1401417850082" expanded="true" signature="3134:3305" placeholder="INSERT INTO ..." />
+                <marker date="1401417850082" expanded="true" signature="3826:3893" placeholder="UPDATE $this..." />
               </folding>
             </state>
           </provider>
@@ -60,7 +56,7 @@
       <file leaf-file-name="finalizaPedido.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="47" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.62023216" vertical-offset="0" max-vertical-offset="1547">
+            <state line="74" column="0" selection-start="2796" selection-end="2796" vertical-scroll-proportion="2.0862355" vertical-offset="0" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
@@ -84,9 +80,9 @@
         <option value="$PROJECT_DIR$/classes/finalizaCardapio.php" />
         <option value="$PROJECT_DIR$/classes/carrinhoPedido.php" />
         <option value="$PROJECT_DIR$/classes/Cliente.php" />
-        <option value="$PROJECT_DIR$/classes/Cardapio.php" />
         <option value="$PROJECT_DIR$/classes/Pdv.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/classes/Cardapio.php" />
         <option value="$PROJECT_DIR$/finalizaPedido.php" />
       </list>
     </option>
@@ -153,21 +149,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="debug" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD_OOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArteComSabor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
+              <option name="myItemId" value="Modelagem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -212,14 +194,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1376" height="784" extended-state="7" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19726859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2094082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -254,6 +236,75 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.0" vertical-offset="878" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="47" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Pdv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="47" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Cardapio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="51" selection-start="3543" selection-end="3543" vertical-scroll-proportion="0.0" vertical-offset="3332" max-vertical-offset="3723">
+          <folding>
+            <marker date="1401417850082" expanded="true" signature="3134:3305" placeholder="INSERT INTO ..." />
+            <marker date="1401417850082" expanded="true" signature="3826:3893" placeholder="UPDATE $this..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2796" selection-end="2796" vertical-scroll-proportion="0.0" vertical-offset="878" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="47" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Pdv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="249" column="47" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.0" vertical-offset="4233" max-vertical-offset="4539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Cardapio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="51" selection-start="3543" selection-end="3543" vertical-scroll-proportion="0.0" vertical-offset="3332" max-vertical-offset="3723">
+          <folding>
+            <marker date="1401417850082" expanded="true" signature="3134:3305" placeholder="INSERT INTO ..." />
+            <marker date="1401417850082" expanded="true" signature="3826:3893" placeholder="UPDATE $this..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="6" selection-start="2630" selection-end="2630" vertical-scroll-proportion="0.0" vertical-offset="878" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="107" column="28" selection-start="4804" selection-end="4804" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2159">
@@ -264,29 +315,18 @@
     <entry file="file://$PROJECT_DIR$/classes/Pdv.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="19" selection-start="179" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3876">
-          <folding>
-            <marker date="1401415171379" expanded="true" signature="3648:3920" placeholder="INSERT INTO ..." />
-            <marker date="1401415171379" expanded="true" signature="4736:4806" placeholder="UPDATE $this..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Crud.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="714">
-          <folding>
-            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
+        <state line="12" column="44" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/DB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="26" column="2" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Sessao.php">
@@ -298,18 +338,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Cliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
-          <folding />
-        </state>
+        <state line="22" column="1" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Cardapio.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="542" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1088">
           <folding>
-            <element signature="e#7#89#0" expanded="true" />
-            <marker date="1401385889323" expanded="true" signature="792:989" placeholder="INSERT INTO ..." />
-            <marker date="1401385889323" expanded="true" signature="1624:1691" placeholder="UPDATE $this..." />
+            <marker date="1401417850082" expanded="true" signature="3134:3305" placeholder="INSERT INTO ..." />
+            <marker date="1401417850082" expanded="true" signature="3826:3893" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
@@ -382,9 +419,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Cliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="98" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="476">
-          <folding />
-        </state>
+        <state line="4" column="14" selection-start="98" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="476" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Sessao.php">
@@ -468,9 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/itensPedido.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Sessao.php">
@@ -482,60 +515,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/DB.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="826" selection-end="826" vertical-scroll-proportion="0.73300165" vertical-offset="0" max-vertical-offset="603">
-          <folding />
-        </state>
+        <state line="26" column="2" selection-start="826" selection-end="826" vertical-scroll-proportion="0.73300165" vertical-offset="0" max-vertical-offset="603" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Crud.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="271" selection-end="271" vertical-scroll-proportion="-4.576923" vertical-offset="85" max-vertical-offset="714">
-          <folding>
-            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table WHERE..." />
-            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..$this-&gt;table ORDER..." />
-            <marker date="1398573781242" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
+        <state line="12" column="44" selection-start="271" selection-end="271" vertical-scroll-proportion="-4.576923" vertical-offset="85" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Cliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.25373134" vertical-offset="0" max-vertical-offset="603">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Cardapio.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="5" selection-start="743" selection-end="743" vertical-scroll-proportion="-13.538462" vertical-offset="243" max-vertical-offset="1156">
-          <folding>
-            <element signature="e#7#89#0" expanded="true" />
-            <marker date="1401385889323" expanded="true" signature="792:989" placeholder="INSERT INTO ..." />
-            <marker date="1401385889323" expanded="true" signature="1624:1691" placeholder="UPDATE $this..." />
-          </folding>
-        </state>
+        <state line="9" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.25373134" vertical-offset="0" max-vertical-offset="603" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="47" selection-start="158" selection-end="158" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="2227">
+        <state line="3" column="47" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2227">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Pdv.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="47" selection-start="4638" selection-end="4638" vertical-scroll-proportion="-83.0" vertical-offset="0" max-vertical-offset="4539">
+        <state line="249" column="47" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.0" vertical-offset="4233" max-vertical-offset="4539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Cardapio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="51" selection-start="3543" selection-end="3543" vertical-scroll-proportion="0.0" vertical-offset="3332" max-vertical-offset="3723">
           <folding>
-            <marker date="1401415171379" expanded="true" signature="3648:3920" placeholder="INSERT INTO ..." />
-            <marker date="1401415171379" expanded="true" signature="4736:4806" placeholder="UPDATE $this..." />
+            <marker date="1401417850082" expanded="true" signature="3134:3305" placeholder="INSERT INTO ..." />
+            <marker date="1401417850082" expanded="true" signature="3826:3893" placeholder="UPDATE $this..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="47" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.62023216" vertical-offset="0" max-vertical-offset="1547">
+        <state line="74" column="0" selection-start="2796" selection-end="2796" vertical-scroll-proportion="2.0862355" vertical-offset="0" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
