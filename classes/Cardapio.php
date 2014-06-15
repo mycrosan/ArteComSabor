@@ -13,15 +13,31 @@
  */
 class Cardapio extends Crud {
     //     Atributo dos items do pedido do cliente
-    protected $tabela = 'cardapio';
+    protected $tabelacard = 'cardapio';
     private $id_cardapio;
     private $tipo;
     private $qte;
     private $valor;
     private $classe;
-    private $secao;
+    private $sessao;
     private $pdv_ID_PDV;
     private $produto_ID_PRODUTO;
+
+    /**
+     * @param string $tabela
+     */
+    public function setTabela($tabela)
+    {
+        $this->tabela = $tabela;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTabela()
+    {
+        return $this->tabela;
+    }
 
     /**
      * @param mixed $valor
@@ -56,20 +72,21 @@ class Cardapio extends Crud {
     }
 
     /**
-     * @param mixed $secao
+     * @param mixed $sessao
      */
-    public function setSecao($secao)
+    public function setSessao($sessao)
     {
-        $this->secao = $secao;
+        $this->sessao = $sessao;
     }
 
     /**
      * @return mixed
      */
-    public function getSecao()
+    public function getSessao()
     {
-        return $this->secao;
+        return $this->sessao;
     }
+
 
     /**
      * @param mixed $qte
@@ -186,23 +203,28 @@ class Cardapio extends Crud {
     /**
      * @param mixed $data_cardapio
      */
+    public function pegaIdPdv(){
+       // $idPdv = $this->encontrarTudo();
+        //print_r($idPdv);
+        //return $idPdv;
+    }
 
 
     public function inserir(){
-        $sql = "INSERT INTO $this->table (TIPO, QTE, VALOR, CLASSE, SECAO, pdv_ID_PDV, produtos_ID_PRODUTO) VALUES (:tipo, :qte, :valor, :classe, :secao, :pdv_ID_PDV, :produto_ID_PRODUTO)";
+        $sql = "INSERT INTO $this->tabelacard (TIPO, QTE, VALOR, CLASSE, SESSAO, pdv_ID_PDV, produtos_ID_PRODUTO) VALUES (:tipo, :qte, :valor, :classe, :sessao, :pdv_ID_PDV, :produto_ID_PRODUTO)";
         $stmt = DB::preparaotrem($sql);
         $stmt->bindParam(':tipo', $this->tipo);
         $stmt->bindParam(':qte', $this->qte);
         $stmt->bindParam(':valor', $this->valor);
         $stmt->bindParam(':classe', $this->classe);
-        $stmt->bindParam(':secao', $this->secao);
+        $stmt->bindParam(':sessao', $this->sessao);
         $stmt->bindParam(':pdv_ID_PDV', $this->pdv_ID_PDV);
         $stmt->bindParam(':produto_ID_PRODUTO', $this->produto_ID_PRODUTO);
         return $stmt->execute();
     }
     public function atualizar($id)
     {
-        $sql = "UPDATE $this->table SET nome = :nome, email = :email WHERE id = :id";
+        $sql = "UPDATE $this->tabelacard SET nome = :nome, email = :email WHERE id = :id";
         $stmt = DB::preparaotrem($sql);
         $stmt->bindParam(':nome', $this->nome);
         $stmt->bindParam(':email', $this->email);
@@ -211,3 +233,4 @@ class Cardapio extends Crud {
     }
 
 }
+

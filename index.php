@@ -100,7 +100,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $itens->descricao = $_REQUEST['txtDescricaoProduto'];
         $itens->quantidade = $_REQUEST['txtQuantidade'];
         $itens->preco = $_REQUEST['txtPreco'];
-        $itens->sessao = session_id();
+        $itens->setSessao(session_id());
 //$lista->setGeraID($_SESSION['id']);
 //echo $_SESSION['id'] = $lista->getGeraID();
         Sessao::set('itensPedido',array(

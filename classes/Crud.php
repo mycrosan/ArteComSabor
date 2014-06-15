@@ -19,6 +19,12 @@ abstract class Crud extends DB{
         $stmt->execute();
         return $stmt->fetch();
     }
+    public function consulta($sql){
+        $stmt = DB::preparaotrem($sql);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetch();
+    }
     public function encontrarTudo(){
         $sql = "SELECT * FROM $this->table ORDER BY 'CADASTRO' DESC LIMIT 10";
         $stmt = DB::preparaotrem($sql);

@@ -18,6 +18,28 @@ class Pdv extends Crud{
     private $hora;
     private $idfuncionario;
     private $idcliente;
+    private $idPdv;
+
+    /**
+     * @param mixed $idPdv
+     */
+    public function setIdPdv($idPdv)
+    {
+        $this->idPdv = $idPdv;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdPdv()
+    {
+        $idUltimoPdv = $this->consulta("SELECT MAX(ID_PDV) FROM pdv");
+      foreach ($idUltimoPdv as $valor){
+          return $valor;
+      }
+
+    }
+
 
     /**
      * @param mixed $hora
