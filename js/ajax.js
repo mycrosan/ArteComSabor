@@ -25,3 +25,11 @@ $(document).ready(function(){
         }
 });
 });
+function getPedidoPizza(){
+    $.ajax({
+        url: 'pedidoPizza.php',
+        success: function(data) {
+            $('#dados').html(data);
+        }
+    });
+}

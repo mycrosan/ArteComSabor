@@ -1,19 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Mycrosan
- * Date: 20/05/14
- * Time: 21:03
- */
-
 class Sessao {
     private static $_sessaoIniciada = false;
     public static function iniciaSessao()
     {
         if(self::$_sessaoIniciada == false)
         {
-        session_start();
-        self::$_sessaoIniciada = true;
+            session_start();
+            self::$_sessaoIniciada = true;
         }
     }
     public static function set($key, $value)
@@ -29,10 +22,10 @@ class Sessao {
         }
         else
         {
-             if (isset($_SESSION[$key]))
+            if (isset($_SESSION[$key]))
                 return $_SESSION[$key];
         }
-            return false;
+        return false;
     }
     public static function showArray($key = false)
     {
@@ -46,23 +39,20 @@ class Sessao {
         echo"<tr>";
         $cont = 0;
         foreach($_SESSION[$key] as $valor2){
-        foreach($value as $valores2){
-            $num = count($value);
-            if($cont < $num){
-            echo "<th>$valores2</th>";
+            foreach($value as $valores2){
+                $num = count($value);
+                if($cont < $num){
+                    echo "<th>$valores2</th>";
+                }
+                $cont += 1;
             }
-            $cont += 1;
         }
-
-    }
         echo "</tr>";
         foreach ($_SESSION[$key] as $valor){
-
-           foreach($value as $valores){
-               echo "<td>".$valor[$valores]."</td>";
-           }
+            foreach($value as $valores){
+                echo "<td>".$valor[$valores]."</td>";
+            }
             echo"</tr>";
-
         }
         echo "<tr>";
         echo"</tr>";

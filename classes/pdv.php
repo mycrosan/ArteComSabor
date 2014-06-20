@@ -3,7 +3,10 @@
  * Class finalizaPedido
  */
 class Pdv extends Crud{
-    protected $tablepdv = 'pdv';
+    protected $tabela = 'pdv';
+    protected $campoOrdenacao = 'ID_PDV';
+
+
     //dados do pdv.
     private $tipo;
     private $qte;
@@ -255,7 +258,7 @@ class Pdv extends Crud{
 
 
     public function inserir(){
-        $sql = "INSERT INTO $this->tablepdv (TIPO, QTE, VALOR, MARCA, IMP, CLASSE, STATUS, ALTERA, funcionarios_ID_FUNCIONARIO, clientes_ID_CLIENTE, SESSAO, DATAPDV, HORA) VALUES (:tipo, :qte,:valor,:marca,:imp,:classe,:status,:altera, :idfuncionario,:idcliente, :sessao, :datapdv, :hora)";
+        $sql = "INSERT INTO $this->tabela (TIPO, QTE, VALOR, MARCA, IMP, CLASSE, STATUS, ALTERA, funcionarios_ID_FUNCIONARIO, clientes_ID_CLIENTE, SESSAO, DATAPDV, HORA) VALUES (:tipo, :qte,:valor,:marca,:imp,:classe,:status,:altera, :idfuncionario,:idcliente, :sessao, :datapdv, :hora)";
         $stmt = DB::preparaotrem($sql);
         $stmt->bindParam(':tipo', $this->tipo);
         $stmt->bindParam(':qte', $this->qte);
@@ -274,11 +277,36 @@ class Pdv extends Crud{
     }
      public function atualizar($id)
     {
-        $sql = "UPDATE $this->tablepdv SET nome = :nome, email = :email WHERE id = :id";
+        $sql = "UPDATE $this->tabela SET nome = :nome, email = :email WHERE id = :id";
         $stmt = DB::preparaotrem($sql);
         $stmt->bindParam(':nome', $this->nome);
         $stmt->bindParam(':email', $this->email);
         $stmt->bindParam(':id', $id);
         return $stmt->execute();
+    }
+    public static function showValues($key , $value)
+    {
+        echo"<table class='table table-condensed'>";
+        echo"<tr>";
+        $cont = 0;
+        foreach($_SESSION[$key] as $valor2){
+            foreach($value as $valores2){
+                $num = count($value);
+                if($cont < $num){
+                    echo "<th>$valores2</th>";
+                }
+                $cont += 1;
+            }
+        }
+        echo "</tr>";
+        foreach ($_SESSION[$key] as $valor){
+            foreach($value as $valores){
+                echo "<td>".$valor[$valores]."</td>";
+            }
+            echo"</tr>";
+        }
+        echo "<tr>";
+        echo"</tr>";
+        echo "</table>";
     }
 }

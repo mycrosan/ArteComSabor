@@ -9,11 +9,12 @@
 require_once "classes/DB.php";
 abstract class Crud extends DB{
     protected $tabela;
+    protected $campoOrdenacao;
     abstract public function inserir();
     abstract public function atualizar($id);
 
     public function encontrar($id){
-        $sql = "SELECT * FROM $this->table WHERE id = :id";
+        $sql = "SELECT * FROM $this->tabela WHERE id = :id";
         $stmt = DB::preparaotrem($sql);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
@@ -26,14 +27,14 @@ abstract class Crud extends DB{
         return $stmt->fetch();
     }
     public function encontrarTudo(){
-        $sql = "SELECT * FROM $this->table ORDER BY 'CADASTRO' DESC LIMIT 10";
+        $sql = "SELECT * FROM $this->tabela ORDER BY $this->campoOrdenacao DESC";
         $stmt = DB::preparaotrem($sql);
         $stmt->execute();
         return $stmt->fetchAll();
 
     }
     public function apagar($id){
-        $sql = "DELETE FROM $this->table WHERE id= :id";
+        $sql = "DELETE FROM $this->tabela WHERE id= :id";
         $stmt = DB::preparaotrem($sql);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         return $stmt->execute();
