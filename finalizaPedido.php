@@ -1,11 +1,11 @@
-<?php require_once 'classes/header.php';?>
-<?php require_once 'classes/menu.php'; ?>
+<?php require_once 'classes/header.php'; ?>
+<?php require_once 'classes/require/menu.php'; ?>
 <?php
 $valores = new Sessao();
-echo"<h4>Cliente:</h4>";
-$valores->showValues('dadosCliente',array('COD','FONE','NOME','FUNC.','ENDEREÇO','BAIRRO'));
+echo "<h4>Cliente:</h4>";
+$valores->showValues('dadosCliente', array('COD', 'FONE', 'NOME', 'FUNC.', 'ENDEREÇO', 'BAIRRO'));
 echo "<h4>Produtos:</h4>";
-$valores->showValues('itensPedido',array('COD','DESCRIÇÃO','QUANT.','PREÇO'));
+$valores->showValues('itensPedido', array('COD', 'DESCRIÇÃO', 'QUANT.', 'PREÇO'));
 
 
 //echo $_SESSION['dadosCliente'][0]['COD'];
@@ -26,10 +26,10 @@ $inserirPdv->setSessao(session_id());
 $inserirPdv->setDataPdv(date("Y/m/d"));
 $inserirPdv->setHora(date("H:i:s"));
 $inserirPdv->inserir();
-if($inserirPdv){
+if ($inserirPdv) {
     //Esse método pega o id do último pedido inserido. "Tem que revisar"
     $idParaCardapio = $inserirPdv->getIdPdv();
-    echo "Pdv ".$idParaCardapio." Inserido com sucesso"."<br>";
+    echo "Pdv " . $idParaCardapio . " Inserido com sucesso" . "<br>";
 
 }
 // Instancia o objeto cardápio para inserir na tabela cardapio - Precisa da FK do PDV
@@ -38,7 +38,7 @@ $inserirCardapio = new Cardapio();
 
 $qtdItens = count($_SESSION['itensPedido']);
 
-for($i= 0; $i<$qtdItens; $i++){
+for ($i = 0; $i < $qtdItens; $i++) {
     $inserirCardapio->setProdutoIDPRODUTO($_SESSION['itensPedido'][$i]['COD']);
     $inserirCardapio->setQte($_SESSION['itensPedido'][$i]['QUANT.']);
     $inserirCardapio->setSessao(session_id());
@@ -47,11 +47,11 @@ for($i= 0; $i<$qtdItens; $i++){
 }
 
 
-if($inserirCardapio){
-    echo"<br>";
-    echo "Itens do Pedido ".$idParaCardapio." cadastrado certinho";
+if ($inserirCardapio) {
     echo "<br>";
-}else{
+    echo "Itens do Pedido " . $idParaCardapio . " cadastrado certinho";
+    echo "<br>";
+} else {
     echo "Tem algum problema";
 }
 

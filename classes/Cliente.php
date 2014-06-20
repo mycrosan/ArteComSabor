@@ -1,6 +1,7 @@
-
 <?php
-class Cliente{
+
+class Cliente
+{
 //Atributos do pedido do cliente
     private $IDcliente;
     private $telefone;
@@ -8,11 +9,15 @@ class Cliente{
     private $funcionario;
     private $endereco;
     private $bairro;
+    private $obs;
 
-    public function __get($key){
-    return $this->$key;
-}
-    public function __set($key,$value){
+    public function __get($key)
+    {
+        return $this->$key;
+    }
+
+    public function __set($key, $value)
+    {
         $this->$key = $value;
     }
 }

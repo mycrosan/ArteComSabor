@@ -1,41 +1,54 @@
-<?php require_once 'classes/menu.php'; ?>
-                            <?php
-                            $pedidos = new Pdv();
-                            ?>
+<?php require_once 'classes/require/menu.php'; ?>
 
-                            <button type="button" onclick="window.location.href='pedidoPizza.php'" class="btn btn-warning btn-lg">Novo</button>
-                            <div id="dados">
-                                <table class='table table-condensed'>
-                                    <tr>
-                                        <th>Nº Pedido</th>
-                                        <th>Cliente</th>
-                                        <th>STATUS</th>
-                                        <th>DATA</th>
-                                        <th>HORA</th>
-                                        <th>Açãoes</th>
-                                    </tr>
+<?php
+$pedidos = new Pdv();
+?>
 
-
-                                    <?php
-                                    foreach ($pedidos->encontrarTudo() as $chave =>$valor):
-                                        echo "<tr>";
-                                        echo "<td>".$valor->ID_PDV."</td>";
-                                        echo "<td>".$valor->clientes_ID_CLIENTE."</td>";
-                                        echo "<td>".$valor->STATUS."</td>";
-                                        echo "<td>".$valor->DATAPDV."</td>";
-                                        echo "<td>".$valor->HORA."</td>";
-                                        echo "<td>ATUALIZR STATUS,CONCLUIR, APAGAR</td>";
-                                        echo "</tr>";
-                                    endforeach;
-
-                                    ?>
+<button type="button" onclick="window.location.href='pedidoPizza.php'" class="btn btn-warning btn-lg">Novo Pedido
+</button>
+<div class="panel panel-warning">
+    <div class="panel-heading">
+        <h3 class="panel-title">Últimos pedidos</h3>
+    </div>
+    <div class="panel-body">
+        <div id="dados">
+            <div class="table-responsive">
+                <table class='table'>
+                    <tr>
+                        <th>Nº Pedido</th>
+                        <th>Cliente</th>
+                        <th>STATUS</th>
+                        <th>DATA</th>
+                        <th>HORA</th>
+                        <th>Ações</th>
+                    </tr>
 
 
-                                </table>
-                            </div>
-                        </article>
-                    </div>
-                </div></div></div></div></div>
+                    <?php
+                    foreach ($pedidos->encontrarTudo() as $chave => $valor):
+                        echo "<tr>";
+                        echo "<td>" . $valor->ID_PDV . "</td>";
+                        echo "<td>" . $valor->clientes_ID_CLIENTE . "</td>";
+                        echo "<td>" . $valor->STATUS . "</td>";
+                        echo "<td>" . $valor->DATAPDV . "</td>";
+                        echo "<td>" . $valor->HORA . "</td>";
+                        echo "<td>
+                                        <button type='button' onclick='window.location.href='finalizaPedido.php'' class='btn btn-warning btn-sm'>Editar</button>
+                                        <button type='button' onclick='window.location.href='finalizaPedido.php'' class='btn btn-success btn-sm'>Concluir</button>
+                                        <button type='button' onclick='window.location.href='finalizaPedido.php'' class='btn btn-danger btn-sm'>Apagar</button>
+                                        </td>";
+                        echo "</tr>";
+                    endforeach;
+
+                    ?>
+
+
+                </table>
+            </div>
+        </div>
+        </article>
+    </div>
+</div></div></div></div></div>
 </div>
 </div>
 </div>
@@ -46,17 +59,7 @@
 
 
 
-<footer class="my-footer clearfix">
-    <div class="my-content-layout">
-        <div class="my-content-layout-row">
-            <div class="my-layout-cell layout-item-0" style="width: 100%">
-                <p><a href="#">Link1</a> | <a href="#">Link2</a> | <a href="#">Link3</a></p>
-                <p>Copyright © 2014. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-
-</footer>
+<?php require_once 'classes/require/footer.php' ?>
 
 </div>
 <p class="my-page-footer">
