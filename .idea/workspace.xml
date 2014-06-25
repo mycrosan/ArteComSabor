@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e192c265-63ef-4427-a0c7-8f31c5696bae" name="Default" comment="Fazendo o commit pelo phpStorm.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Modelagem/Banco.21.06.2014.mwb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/font/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.phar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/font/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/font/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/font/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/css/bootplus-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/css/bootplus-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/css/bootplus.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/css/bootplus.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootplus/font/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/require/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/require/menu.php" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\Blog Posts\post-2.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\Blog Posts\post.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\79-large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\79.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\blockbullets.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\footerbullets.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\footerrssicon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\header.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\header.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\menuseparator.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\object1558778440.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\object227400126.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\postauthoricon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\postbullets.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\postdateicon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\postediticon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\postquote.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\preloader-01.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\searchicon.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\shutterstock_32050237-large.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\shutterstock_32050237.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\shutterstock_62287657-01-3-large.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\shutterstock_62287657-01-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\spacer.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\images\template_preview.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\index.artx" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\script.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\script.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\style.ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\style.responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\ultimos-pedidos.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\ultimos-pedidos\new-page-2.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\ultimos-pedidos\new-page-3.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\Novo_Layout\ultimos-pedidos\new-page.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\xamp\htdocs\ArteComSabor\classes\menu.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CRUD_OOP.iml" afterPath="$PROJECT_DIR$/.idea/CRUD_OOP.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Cliente.php" afterPath="$PROJECT_DIR$/classes/Cliente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Sessao.php" afterPath="$PROJECT_DIR$/classes/Sessao.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ajax.js" afterPath="$PROJECT_DIR$/js/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalizaPedido.php" afterPath="$PROJECT_DIR$/finalizaPedido.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/header.php" afterPath="$PROJECT_DIR$/classes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pedidoPizza.php" afterPath="$PROJECT_DIR$/pedidoPizza.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/retornaCliente.php" afterPath="$PROJECT_DIR$/classes/retornaCliente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="e192c265-63ef-4427-a0c7-8f31c5696bae" name="Default" comment="Feito o layout e adicionado as funções&#10;&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CRUD_OOP.iws" />
@@ -108,11 +41,11 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1462">
+            <state line="17" column="42" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1479">
               <folding>
-                <marker date="1403359675031" expanded="true" signature="1247:1391" placeholder="..." />
-                <marker date="1403359675031" expanded="true" signature="1247:1368" placeholder="..." />
-                <marker date="1403359675031" expanded="true" signature="1247:1777" placeholder="..." />
+                <marker date="1403728651512" expanded="true" signature="1269:1413" placeholder="..." />
+                <marker date="1403728651512" expanded="true" signature="1269:1390" placeholder="..." />
+                <marker date="1403728651512" expanded="true" signature="1269:1799" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -121,7 +54,7 @@
       <file leaf-file-name="menu.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/require/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="35" selection-start="87" selection-end="87" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1292">
+            <state line="3" column="35" selection-start="87" selection-end="87" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="1343">
               <folding />
             </state>
           </provider>
@@ -166,7 +99,7 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.33147633" vertical-offset="578" max-vertical-offset="98464">
+            <state line="41" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.33333334" vertical-offset="578" max-vertical-offset="98464">
               <folding />
             </state>
           </provider>
@@ -224,13 +157,13 @@
         <option value="$PROJECT_DIR$/classes/Cliente.php" />
         <option value="$PROJECT_DIR$/Novo_Layout/style.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/classes/header.php" />
         <option value="$PROJECT_DIR$/classes/Sessao.php" />
         <option value="$PROJECT_DIR$/classes/retornaCliente.php" />
         <option value="$PROJECT_DIR$/js/ajax.js" />
         <option value="$PROJECT_DIR$/classes/require/menu.php" />
         <option value="$PROJECT_DIR$/pedidoPizza.php" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
       </list>
     </option>
   </component>
@@ -353,6 +286,11 @@
       <created>1400816300338</created>
       <updated>1400816300338</updated>
     </task>
+    <task id="LOCAL-00001" summary="Feito o layout e adicionado as funções&#10;&#10;">
+      <created>1403728704652</created>
+      <updated>1403728704652</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -380,7 +318,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3306581" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -414,7 +352,10 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Fazendo o commit pelo phpStorm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fazendo o commit pelo phpStorm." />
+    <MESSAGE value="Feito o layout e adicionado as funções&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feito o layout e adicionado as funções&#10;&#10;" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -661,11 +602,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1462">
+        <state line="17" column="42" selection-start="539" selection-end="539" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1479">
           <folding>
-            <marker date="1403359675031" expanded="true" signature="1247:1391" placeholder="..." />
-            <marker date="1403359675031" expanded="true" signature="1247:1368" placeholder="..." />
-            <marker date="1403359675031" expanded="true" signature="1247:1777" placeholder="..." />
+            <marker date="1403728651512" expanded="true" signature="1269:1413" placeholder="..." />
+            <marker date="1403728651512" expanded="true" signature="1269:1390" placeholder="..." />
+            <marker date="1403728651512" expanded="true" signature="1269:1799" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -714,7 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.33147633" vertical-offset="578" max-vertical-offset="98464">
+        <state line="41" column="0" selection-start="630" selection-end="630" vertical-scroll-proportion="0.33333334" vertical-offset="578" max-vertical-offset="98464">
           <folding />
         </state>
       </provider>
