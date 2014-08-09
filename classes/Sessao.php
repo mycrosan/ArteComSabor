@@ -46,11 +46,12 @@ class Sessao
         echo '</pre>';
     }
 
-    public static function showValues($key, $value)
+    public static function showValuesProdutos($key, $value)
     {
         echo "<table class='table table-condensed'>";
         echo "<tr>";
         $cont = 0;
+        //Exibe os cabeçalhos
         foreach ($_SESSION[$key] as $valor2) {
             foreach ($value as $valores2) {
                 $num = count($value);
@@ -61,10 +62,53 @@ class Sessao
             }
         }
         echo "</tr>";
+        // Exibe os valores
+        $soma = 0;
         foreach ($_SESSION[$key] as $valor) {
-            foreach ($value as $valores) {
-                echo "<td>" . $valor[$valores] . "</td>";
+            echo "<td>" . $valor['COD'] . "</td>";
+            echo "<td>" . $valor['DESCRIÇÃO'] . "</td>";
+            echo "<td>" . $valor['QUANT.'] . "</td>";
+            echo "<td>R$ " . number_format($valor['PREÇO'], 2) * $valor['QUANT.'] . "</td>";
+
+            $soma += $valor['PREÇO'];
+            echo "</tr>";
+        }
+        echo "<tr>";
+        echo "<td></td>";
+        echo "<td></td>";
+        echo "<td>TOTAL</td>";
+        echo "<td>R$ " . number_format($soma, 2) . "</td>";
+        echo "</tr>";
+        echo "<tr>";
+        echo "</tr>";
+        echo "</table>";
+    }
+
+    public static function showValuesCliente($key, $value)
+    {
+        echo "<table class='table table-condensed'>";
+        echo "<tr>";
+        $cont = 0;
+        //Exibe os cabeçalhos
+        foreach ($_SESSION[$key] as $valor2) {
+            foreach ($value as $valores2) {
+                $num = count($value);
+                if ($cont < $num) {
+                    echo "<th>$valores2</th>";
+                }
+                $cont += 1;
             }
+        }
+        echo "</tr>";
+        // Exibe os valores
+        $soma = 0;
+        foreach ($_SESSION[$key] as $valor) {
+            echo "<td>" . $valor['COD'] . "</td>";
+            echo "<td>" . $valor['FONE'] . "</td>";
+            echo "<td>" . $valor['NOME'] . "</td>";
+            echo "<td>" . $valor['FUNC.'] . "</td>";
+            echo "<td>" . $valor['ENDEREÇO'] . "</td>";
+            echo "<td>" . $valor['BAIRRO'] . "</td>";
             echo "</tr>";
         }
         echo "<tr>";
@@ -72,4 +116,4 @@ class Sessao
         echo "</table>";
     }
 
-} 
+}

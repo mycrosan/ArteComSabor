@@ -1,12 +1,15 @@
 {
-    "name": "mycrosan/package_name",
+    "name": "ACS/package_name",
     "description": "description_text",
     "minimum-stability": "stable",
     "license": "proprietary",
     "authors": [
         {
-            "name": "Sandy da Silva Santos",
-            "email": "sandysantos@mycrosan.com.br"
+            "name": "author's name",
+            "email": "email@example.com"
         }
-    ]
+    ],
+    "require": {
+        "twbs/bootstrap": "3.1.*@dev"
+    }
 }

@@ -24,7 +24,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pedidos<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Fazer Pedido</a></li>
+                        <li><a href="pedidoPizza.php">Fazer Pedido</a></li>
                         <li><a href="#">Listar Pedidos</a></li>
                         <li><a href="#">Pesquisar Pedidos</a></li>
                         <li class="divider"></li>

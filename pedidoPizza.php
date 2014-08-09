@@ -14,7 +14,7 @@
 
 $cliente = new Cliente();
 //Dados do Cliente para o Pedido
-if (($_SERVER['REQUEST_METHOD'] == 'POST') and ($_POST['txtCliente'] != null)) {
+if (($_SERVER['REQUEST_METHOD'] == 'POST') and (@$_POST['txtCliente'] != null)) {
     if (isset($_POST['txtCliente']) and (empty($_SESSION['dadosCliente'][0]))) {
         $cliente->IDcliente = $_REQUEST['txtIDCliente'];
         $cliente->telefone = $_REQUEST['txtTelefone'];
@@ -64,7 +64,8 @@ endif;
     <button type="button" onclick="window.location.href='classes/destroiSessao.php'" class="btn btn-warning btn-lg">
         Limpar
     </button>
-    <button type="button" onclick="window.location.href='finalizaPedido.php'" class="btn btn-warning btn-lg">Salvar
+    <button type="button" onclick="window.location.href='finalizaPedido.php'" class="btn btn-warning btn-lg">Finalizar
+        Pedido
     </button>
 
     <form id="formPedido" name="formPedido" method="post" action="pedidoPizza.php">
@@ -73,8 +74,9 @@ endif;
                 <h3 class="panel-title">Inserir Cliente</h3>
             </div>
             <?php
-            if (empty($_POST['txtCliente'])):
+            if (empty($_SESSION['dadosCliente'])):
                 ?>
+                Esta no 1.
                 <div class="panel-body">
                     <div class
                     "row">
@@ -111,6 +113,7 @@ endif;
 
                 </div>
             <?php else:; ?>
+                Esta no 2.
                 <h4>Cliente:</h4>
                 <div class="panel-body">
                     <div class
@@ -192,10 +195,11 @@ endif;
 </form>
 </div>
 <?php
+//Exibe os itens do carrinho!
 if (isset($_SESSION['dadosCliente']) and (isset($_SESSION['itensPedido']))) {
     $valores = new Sessao();
     echo "<h4>Produtos:</h4>";
-    $valores->showValues('itensPedido', array('COD', 'DESCRIÇÃO', 'QUANT.', 'PREÇO'));
+    $valores->showValuesProdutos('itensPedido', array('COD', 'DESCRIÇÃO', 'QUANT.', 'PREÇO'));
 }
 
 

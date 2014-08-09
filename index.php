@@ -1,7 +1,9 @@
 <?php require_once 'classes/require/menu.php'; ?>
+<?php require_once 'classes/Sessao.php'; ?>
 
 <?php
 $pedidos = new Pdv();
+$clientes = new Cliente();
 ?>
 
 <button type="button" onclick="window.location.href='pedidoPizza.php'" class="btn btn-warning btn-lg">Novo Pedido
@@ -25,19 +27,24 @@ $pedidos = new Pdv();
 
 
                     <?php
+
                     foreach ($pedidos->encontrarTudo() as $chave => $valor):
                         echo "<tr>";
                         echo "<td>" . $valor->ID_PDV . "</td>";
-                        echo "<td>" . $valor->clientes_ID_CLIENTE . "</td>";
+                        $nome = $clientes->encontrar($valor->clientes_ID_CLIENTE);
+                        echo "<td>" . $nome->NOME . "</td>";
                         echo "<td>" . $valor->STATUS . "</td>";
                         echo "<td>" . $valor->DATAPDV . "</td>";
                         echo "<td>" . $valor->HORA . "</td>";
                         echo "<td>
-                                        <button type='button' onclick='window.location.href='finalizaPedido.php'' class='btn btn-warning btn-sm'>Editar</button>
-                                        <button type='button' onclick='window.location.href='finalizaPedido.php'' class='btn btn-success btn-sm'>Concluir</button>
-                                        <button type='button' onclick='window.location.href='finalizaPedido.php'' class='btn btn-danger btn-sm'>Apagar</button>
+                                        <a href='index.php?act=editar?id=$valor->ID_PDV' class='btn btn-warning btn-sm' role='button'>Editar</a>
+                                        <a href='index.php?act=concluir?id=$valor->ID_PDV' class='btn btn-success btn-sm' role='button'>Concluir</a>
+                                        <a href='index.php?act=apagar?id=$valor->ID_PDV' class='btn btn-danger btn-sm' role='button'>Apagar</a>
                                         </td>";
                         echo "</tr>";
+
+
+
                     endforeach;
 
                     ?>
@@ -56,9 +63,6 @@ $pedidos = new Pdv();
 </div>
 </div>
 </body>
-
-
-
 <?php require_once 'classes/require/footer.php' ?>
 
 </div>
@@ -66,17 +70,5 @@ $pedidos = new Pdv();
     <span id="my-footnote-links">Designed by <a href="www.mycrosan.com.br" target="_blank">Mycrosan</a>.</span>
 </p>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

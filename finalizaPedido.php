@@ -3,9 +3,9 @@
 <?php
 $valores = new Sessao();
 echo "<h4>Cliente:</h4>";
-$valores->showValues('dadosCliente', array('COD', 'FONE', 'NOME', 'FUNC.', 'ENDEREÇO', 'BAIRRO'));
+$valores->showValuesCliente('dadosCliente', array('COD', 'FONE', 'NOME', 'FUNC.', 'ENDEREÇO', 'BAIRRO'));
 echo "<h4>Produtos:</h4>";
-$valores->showValues('itensPedido', array('COD', 'DESCRIÇÃO', 'QUANT.', 'PREÇO'));
+$valores->showValuesProdutos('itensPedido', array('COD', 'DESCRIÇÃO', 'QUANT.', 'PREÇO'));
 
 
 //echo $_SESSION['dadosCliente'][0]['COD'];
