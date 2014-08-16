@@ -11,9 +11,8 @@ function __autoload($nclasse)
 
 }
 ?>
-
 <head>
-    <title>PHP OO</title>
+    <title>Pedidos ACS</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -29,4 +28,15 @@ function __autoload($nclasse)
     <script type="text/javascript" src="js/ajax.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- FIM JS -->
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="js/funcoes.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#list').DataTable();
+        });
+    </script>
 </head>

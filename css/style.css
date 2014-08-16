@@ -2183,7 +2183,7 @@ blockquote p,
    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
    line-height: 175%;
    text-align: center;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .my-footer a,

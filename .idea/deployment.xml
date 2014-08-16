@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Arte Com Sabor" uploadOnCheckin="e3238324-f604-450a-ae5f-927929e9f56f">
-    <option name="myUploadOnCheckinName" value="ACS PEDIDOS" />
+  <component name="PublishConfigData" serverName="Arte Com Sabor">
+    <serverData>
+      <paths name="Arte Com Sabor">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
   </component>
 </project>
 

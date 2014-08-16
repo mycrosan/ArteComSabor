@@ -15,20 +15,23 @@ $clientes = new Cliente();
     <div class="panel-body">
         <div id="dados">
             <div class="table-responsive">
-                <table class='table'>
-                    <tr>
-                        <th>Nº Pedido</th>
+                <table class='table table-bordered table-hover table-stried table-condensed' id="list"
+                '>
+                <thead>
+                <tr>
+                <th>Nº Pedido</th>
                         <th>Cliente</th>
                         <th>STATUS</th>
                         <th>DATA</th>
                         <th>HORA</th>
                         <th>Ações</th>
                     </tr>
+                </thead>
 
 
-                    <?php
+                <?php
 
-                    foreach ($pedidos->encontrarTudo() as $chave => $valor):
+                foreach ($pedidos->encontrarTudo() as $chave => $valor):
                         echo "<tr>";
                         echo "<td>" . $valor->ID_PDV . "</td>";
                         $nome = $clientes->encontrar($valor->clientes_ID_CLIENTE);
