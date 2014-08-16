@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e192c265-63ef-4427-a0c7-8f31c5696bae" name="Default" comment="add plugin de paginação">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/config2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/retornaCliente2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/retornaProduto2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ajax.js" afterPath="$PROJECT_DIR$/js/ajax.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CRUD_OOP.iws" />
@@ -325,7 +321,11 @@
       <created>1408161485408</created>
       <updated>1408161485408</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add plugin de paginação">
+      <created>1408166205775</created>
+      <updated>1408166205775</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
