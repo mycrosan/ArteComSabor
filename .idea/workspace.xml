@@ -4,83 +4,11 @@
     <option name="ANALYSIS_IN_BACKGROUND" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e192c265-63ef-4427-a0c7-8f31c5696bae" name="Default" comment="Feito o layout e adicionado as funções&#10;&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/screenshots/blog.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/screenshots/carousel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/assets/img/devices.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/screenshots/offcanvas.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/_config.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/affix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/assets/brand/bootstrap-punchout.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/grunt/bs-lessdoc-parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/unit/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/js/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/mixins/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/visual/collapse.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/unit/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_jade/customizer-nav.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/unit/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/funcoes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/grid/grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/css/grid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/assets/js/_vendor/holder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/cover/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/grid/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/navbar-static-top/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/sticky-footer/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/components/input-groups.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/jumbotron-narrow/jumbotron-narrow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/mixins/list-group.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/nav/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/visual/modal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/modals.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/mixins/nav-divider.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/offcanvas/offcanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/mixins/opacity.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/unit/phantom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/unit/popover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/js/popovers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/vendor/qunit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/responsive-utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/mixins/responsive-visibility.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/grunt/sauce_browsers.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/unit/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/sticky-footer/sticky-footer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/components/thumbnails.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/less/thumbnails.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/examples/tooltip-viewport/tooltip-viewport.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/tests/unit/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/js/transition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/getting-started/translations.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/twbs/bootstrap/docs/_includes/css/type.html" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\Blog Posts\post.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\images\79.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\images\postquote.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\images\shutterstock_32050237-large.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\style.responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\ultimos-pedidos\new-page-3.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\Novo_Layout\ultimos-pedidos\new-page.html" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\bootplus\css\bootplus.min.css" afterPath="" />
-      <change type="DELETED" beforePath="E:\xamp\htdocs\ArteComSabor\bootplus\font\fontawesome-webfont.eot" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Crud.php" afterPath="$PROJECT_DIR$/classes/Crud.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/header.php" afterPath="$PROJECT_DIR$/classes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jQuery.js" afterPath="$PROJECT_DIR$/js/jQuery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/layout.css" afterPath="$PROJECT_DIR$/css/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+    <list default="true" id="e192c265-63ef-4427-a0c7-8f31c5696bae" name="Default" comment="add plugin de paginação">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/config2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/retornaCliente2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/retornaProduto2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ajax.js" afterPath="$PROJECT_DIR$/js/ajax.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CRUD_OOP.iws" />
@@ -108,28 +36,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="24" selection-start="961" selection-end="961" vertical-scroll-proportion="-13.730769" vertical-offset="119" max-vertical-offset="1394">
-              <folding>
-                <marker date="1408161337226" expanded="true" signature="1533:2017" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.dataTables.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.dataTables.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="3060" max-vertical-offset="248676">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="efeito.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/efeito.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -159,17 +65,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.dataTables.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.dataTables.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2737">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="layout.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -179,28 +74,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/require/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="35" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="289">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2185" column="13" selection-start="47282" selection-end="47282" vertical-scroll-proportion="0.0" vertical-offset="36981" max-vertical-offset="42534">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="header.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="65" selection-start="1366" selection-end="1366" vertical-scroll-proportion="1.1661538" vertical-offset="216" max-vertical-offset="799">
+            <state line="35" column="65" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-14.576923" vertical-offset="216" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config2.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/config2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="34" selection-start="119" selection-end="119" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="retornaCliente2.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/retornaCliente2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="6" selection-end="122" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="493">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="retornaProduto2.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/retornaProduto2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="29" selection-start="122" selection-end="122" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="459">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="19703">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1403206661253" expanded="false" signature="14495:14502" placeholder="..." />
+                <marker date="1403206661253" expanded="false" signature="14638:14645" placeholder="..." />
+                <marker date="1403206661253" expanded="false" signature="39944:40009" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="20" selection-start="932" selection-end="932" vertical-scroll-proportion="0.9031339" vertical-offset="6" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -234,7 +161,6 @@
         <option value="$PROJECT_DIR$/classes/require/footer.php" />
         <option value="$PROJECT_DIR$/Novo_Layout/style.css" />
         <option value="$PROJECT_DIR$/classes/retornaCliente.php" />
-        <option value="$PROJECT_DIR$/js/ajax.js" />
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/classes/Crud.php" />
         <option value="$PROJECT_DIR$/classes/Cliente.php" />
@@ -249,6 +175,10 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/funcoes.js" />
         <option value="$PROJECT_DIR$/classes/header.php" />
+        <option value="$PROJECT_DIR$/classes/config2.php" />
+        <option value="$PROJECT_DIR$/classes/retornaCliente2.php" />
+        <option value="$PROJECT_DIR$/classes/retornaProduto2.php" />
+        <option value="$PROJECT_DIR$/js/ajax.js" />
       </list>
     </option>
   </component>
@@ -309,34 +239,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD_OOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArteComSabor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CRUD_OOP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ArteComSabor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -358,6 +260,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\xamp\htdocs\ArteComSabor\classes" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xamp\htdocs\ArteComSabor\classes\require" />
       <recent name="D:\xamp\htdocs\ArteComSabor\debug" />
@@ -416,7 +321,11 @@
       <created>1403728704652</created>
       <updated>1403728704652</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add plugin de paginação">
+      <created>1408161485408</created>
+      <updated>1408161485408</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -450,7 +359,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277027" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277027" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -482,7 +391,8 @@
     </option>
     <MESSAGE value="Fazendo o commit pelo phpStorm." />
     <MESSAGE value="Feito o layout e adicionado as funções&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feito o layout e adicionado as funções&#10;&#10;" />
+    <MESSAGE value="add plugin de paginação" />
+    <option name="LAST_COMMIT_MESSAGE" value="add plugin de paginação" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -492,26 +402,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/finalizaPedido.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="11" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="799" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Sessao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="52" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="1309" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pedidoPizza.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="128" selection-start="7850" selection-end="7850" vertical-scroll-proportion="0.0" vertical-offset="3061" max-vertical-offset="3621" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Pdv.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Cliente.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="14" selection-start="98" selection-end="99" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="476" />
@@ -610,11 +500,6 @@
     <entry file="file://$PROJECT_DIR$/classes/retornaCliente.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="28" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="510" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
@@ -727,9 +612,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="24" selection-start="961" selection-end="961" vertical-scroll-proportion="-13.730769" vertical-offset="119" max-vertical-offset="1394">
+        <state line="28" column="24" selection-start="953" selection-end="953" vertical-scroll-proportion="-13.730769" vertical-offset="119" max-vertical-offset="1394">
           <folding>
-            <marker date="1408161337226" expanded="true" signature="1533:2017" placeholder="..." />
+            <marker date="1408161462764" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -784,7 +669,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="65" selection-start="1366" selection-end="1366" vertical-scroll-proportion="1.1661538" vertical-offset="216" max-vertical-offset="799">
+        <state line="35" column="65" selection-start="1366" selection-end="1366" vertical-scroll-proportion="-14.576923" vertical-offset="216" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/config2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="34" selection-start="119" selection-end="119" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/retornaCliente2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="6" selection-end="122" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/retornaProduto2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="122" selection-end="122" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="476">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19703">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1403206661253" expanded="false" signature="14495:14502" placeholder="..." />
+            <marker date="1403206661253" expanded="false" signature="14638:14645" placeholder="..." />
+            <marker date="1403206661253" expanded="false" signature="39944:40009" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="20" selection-start="932" selection-end="932" vertical-scroll-proportion="0.9031339" vertical-offset="6" max-vertical-offset="697">
           <folding />
         </state>
       </provider>

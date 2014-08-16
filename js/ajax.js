@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Chamo o Auto complete do JQuery ui setando o id do input, array com os dados e o mínimo de caracteres para disparar o AutoComplete
     $('#txtTelefone').autocomplete({
         source: 'classes/retornaCliente.php',
-        minLength: 1,
+        minLength: 4,
         select: function (evento, conteudo) {
             //console.log(conteudo);
             $('#txtIDCliente').val(conteudo.item.id);
